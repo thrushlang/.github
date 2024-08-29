@@ -4,4 +4,4 @@
 
 # Thrush Programming Language
 
-This project contain all repos relational with **Thrush Lang**, the which is a General Purpose Programming Language, focus in Low Level Programming and interop with C.
+This project contain all repos relational with **Thrush Lang**, the which is a General Purpose Programming Language, focus in __**Low Level Programming**__ and interop with **C**.
