@@ -6,7 +6,7 @@
 
 This project contain all repos relational with **Thrush Lang**, the which is a General Purpose Programming Language, with characteristics as Statically Typed and Compiled, focus in __**Low Level Programming**__ and interop with **C**.
 
->> main.th
+> main.th
 
 ```
 def main(): void {
