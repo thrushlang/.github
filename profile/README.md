@@ -6,9 +6,9 @@
 
 This project contain all repos relational with **Thrush Lang**, the which is a General Purpose Programming Language, with characteristics as Statically Typed and Compiled, focus in __**Low Level Programming**__ and interop with **C**.
 
-> thrushc compile --build main.th
+> thrushc compile --build main.th && ./main
 
-In another way ... (**Coming Soon**)
+*In another way ...* (**Coming Soon**)
 
 > thorium build && ./main
 
