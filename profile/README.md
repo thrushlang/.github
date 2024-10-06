@@ -13,9 +13,7 @@ This project contain all repos relational with **Thrush Lang**, the which is a G
 > thorium build && ./main
 
 ```
-def main(): void {
-
-    println("Hello World!");
-
+fn main() {
+    println("Hello World!\n");
 }
 ```
