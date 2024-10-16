@@ -14,6 +14,10 @@ This project contain all repos relational with **Thrush Lang**, the which is a G
 
 ```
 fn main() {
-    println("Hello World!\n");
+
+    var hello: string = "Hello World!";
+
+    println("%s", hello);
+
 }
 ```
