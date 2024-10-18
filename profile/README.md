@@ -22,6 +22,6 @@ fn main() {
 }
 ```
 
-## Discord
+## Social Networks
 
 [![](https://dcbadge.limes.pink/api/server/https://discord.gg/DJaVs4kM9U)](https://discord.gg/DJaVs4kM9U)
