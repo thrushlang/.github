@@ -21,3 +21,7 @@ fn main() {
 
 }
 ```
+
+## Discord
+
+[![](https://dcbadge.limes.pink/api/server/https://discord.gg/DJaVs4kM9U)](https://discord.gg/DJaVs4kM9U)
