@@ -12,7 +12,7 @@
 
 *In another way ...* (**Coming Soon**)
 
-> thorium build && ./main
+> thorium build && cd dist && ./main
 
 ```
 fn main() {
