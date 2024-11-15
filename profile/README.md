@@ -8,7 +8,7 @@
 
 *With the Compiler...*
 
-> thrushc --backend "clang-18 PATH" --executable --static main.th && ./main
+> thrushc --backend "Backend Compiler PATH (LLVM && Clang Binaries)" --executable --static main.th && ./main
 
 *In another way ...* (**Coming Soon**)
 
