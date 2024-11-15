@@ -8,7 +8,7 @@
 
 *With the Compiler...*
 
-> thrushc compile --build main.th && ./main
+> thrushc --executable --static main.th && ./main
 
 *In another way ...* (**Coming Soon**)
 
