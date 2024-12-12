@@ -14,7 +14,7 @@ But in comparison with C and anothers modern languages Thrush compile a **Rich m
 
 In common arithmetic **Thrush** need the same time than C in resolve problems, but sometimes the **C compiler is too smart** and calculates the result in still compile time. The current Thrush is don't to able to use that powerful skill in compile time.
 
-## Compilation Steps
+## Common Compilation Steps
 
 *With the Compiler...*
 
