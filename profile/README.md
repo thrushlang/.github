@@ -6,6 +6,16 @@
 
 **Thrush Programming Language** is **Strongly Statically Typed**, **Compiled**, **High Level** and **Memory Safety** Programming Language to emit optimal binaries for each architecture. Built with **[LLVM](https://llvm.org/)** Compiler Tools.
 
+## Performance 
+
+Thrush use the minimal **C Runtime** the which improve the performance in comparison with anothers languages, we don't use a **C++ Runtime** and the standard library as **Rust Programming Language** the than which improve the performance with the lowest abstraction, but always is the highly level representation of Assembler.
+
+But in comparison with C and anothers modern languages Thrush compile a **Rich message** in each possible memory breach or overflow in an exact primitive type, that message mean more easy to debug runtime problems for the programmers. The all panics in Runtime will contain a rich message to easy to debug the code.
+
+In common arithmetic **Thrush** need the same time than C in resolve problems, but sometimes the **C compiler is too smart** and calculates the result in still compile time. The current Thrush is don't to able to use that powerful skill in compile time.
+
+## Compilation Steps
+
 *With the Compiler...*
 
 > thrushc --executable --static main.th && ./main
