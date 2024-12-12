@@ -4,7 +4,7 @@
 
 <h1 align="center">Thrush Programming Language</h1>
 
-**Thrush Programming Language** is **Statically Typed**, **Compiled**, **High Level**, **Memory Safety** Programming Language to emit optimal static binaries for each architecture. Built with **[LLVM](https://llvm.org/)** Compiler Tools.
+**Thrush Programming Language** is **Strongly Statically Typed**, **Compiled**, **High Level** and **Memory Safety** Programming Language to emit optimal binaries for each architecture. Built with **[LLVM](https://llvm.org/)** Compiler Tools.
 
 *With the Compiler...*
 
