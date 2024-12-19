@@ -26,7 +26,7 @@ Thrush as Rust they use the **[LLVM](https://llvm.org/)** Infraestructure for co
 
 *With the Package Manager...* (**Coming Soon**)
 
-> thorium build && cd dist && ./main
+> `thorium build && cd dist && ./main`
 
 ```
 fn main() {
