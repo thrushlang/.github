@@ -18,17 +18,13 @@ In common arithmetic **Thrush** need the same time than C in resolve problems, b
 
 Thrush as Rust they use the **[LLVM](https://llvm.org/)** Infraestructure for compile to specific target architecture, enabling the **cross-compilation** completly independent to current host. In addition enabling development of the huge capatibilities for the future.
 
-<p align="center">
-  <img src= "https://github.com/thrushlang/.github/blob/main/assets/Thrushc Stages.png" alt= "logo" style= "width: 2hv; height: 2hv;"> </img>
-</p>
-
 ## Common Compilation Steps
 
 *With the Compiler...*
 
 > thrushc --executable --static main.th && ./main
 
-*In another way ...* (**Coming Soon**)
+*With the Package Manager...* (**Coming Soon**)
 
 > thorium build && cd dist && ./main
 
