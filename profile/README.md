@@ -22,11 +22,11 @@ Thrush as Rust they use the **[LLVM](https://llvm.org/)** Infraestructure for co
 
 *With the Compiler...*
 
-> `thrushc --executable --static --args "!(debug.th, vector.th)debug.o;!(debug.th, vector.th)vector.o" main.th -o main && ./main`
+> `thrushc --executable main.th -o main && output/dist/main`
 
 *With the Package Manager...* (**Coming Soon**)
 
-> `thorium build && cd dist && ./main`
+> `thorium build && output/dist/main`
 
 ```
 fn main() {
