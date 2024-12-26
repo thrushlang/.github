@@ -22,7 +22,7 @@ Thrush as Rust they use the **[LLVM](https://llvm.org/)** Infraestructure for co
 
 *With the Compiler...*
 
-> `thrushc --executable main.th -o main && output/dist/main`
+> `thrushc --executable main.th -o main && ./output/dist/main`
 
 *With the Package Manager...* (**Coming Soon**)
 
