@@ -33,7 +33,7 @@ fn main() {
 
     var hello: string = "Hello World!";
 
-    println("%s", hello);
+    println("{}", hello);
 
 }
 ```
