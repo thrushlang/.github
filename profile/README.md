@@ -4,7 +4,7 @@
 
 <h1 align="center">Thrush Programming Language</h1>
 
-**Thrush Programming Language** is **Strongly Statically Typed**, **Compiled**, **General Purpose** Programming Language to emit optimal binaries for each architecture. Built with **[LLVM](https://llvm.org/)** Compiler Tools.
+**Thrush Programming Language** is **Strongly Statically Typed**, **Ahead of Time Compiled**, **General Purpose** Programming Language to emit optimal binaries for each architecture. Built with **[LLVM](https://llvm.org/)** Compiler Tools.
 
 ## Performance 
 
@@ -12,7 +12,7 @@ Thrush use the minimal **C Runtime** the which improve the performance in compar
 
 But in comparison with C and anothers modern languages Thrush compile a **Rich message** in each possible memory breach or overflow in an exact primitive type, that message mean more easy to debug runtime problems for the programmers. The all panics in Runtime will contain a rich message to easy to debug the code.
 
-In common arithmetic **Thrush** need the same time than C in resolve problems, but sometimes the **C compiler is too smart** and calculates the result in still compile time. The current Thrush is don't to able to use that powerful skill in compile time.
+In common arithmetic **Thrush** need the same time than C in resolve problems, but sometimes the **C compiler is too smart** and calculates the result in still compile time. The current Thrush is don't to able to use that powerful skill in compile time. But in general **Thrush** offers the same performance that C, because the general abstraction of language is written in LLVM IR, a example is the Vec<T> API written in LLVM IR for **Thrush**.
 
 ## Cross Compilation
 
