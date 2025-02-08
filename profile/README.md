@@ -29,11 +29,11 @@ Thrush as Rust they use the **[LLVM](https://llvm.org/)** Infraestructure for co
 > `thorium run`
 
 ```
+public @extern("printf") fn print(fmt :: String): i32;
+
 fn main() {
 
-    var hello: string = "Hello World!";
-
-    println("{}", hello);
+    print("Hello World!")
 
 }
 ```
