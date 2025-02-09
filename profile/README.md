@@ -4,7 +4,7 @@
 
 <h1 align="center">Thrush Programming Language</h1>
 
-**Thrush Programming Language** is Strongly Statically Typed, AOT Compiled, Highly Optimized, General Purpose Programming Language to build maintainable software.
+**Thrush Programming Language** is strongly statically typed, AOT native compiled, highly optimized, general-purpose programming language to build maintainable software.
 
 ## Performance 
 
@@ -20,16 +20,16 @@ Thrush as Rust they use the **[LLVM](https://llvm.org/)** Infraestructure for co
 
 ## Common Compilation Steps
 
-*With the Compiler...*
+*With the internal compiler (thrushc)...*
 
 > `thrushc --executable main.th -o main && ./output/dist/main`
 
-*With the Package Manager...* (**Coming Soon**)
+*With the package manager...* (**Coming soon**)
 
 > `thorium run`
 
 ```
-public @extern("printf") fn print(fmt :: String): i32;
+public @extern("printf") fn print(fmt :: String, ...): i32;
 
 fn main() {
 
