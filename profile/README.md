@@ -9,16 +9,18 @@
 ## Features 
 
 - High level abstraction.
+- Native and embedded data structures, as Vectors (Vec<T>).
 - Non implicit cast for primitive types.
 - Strongly statically typed.
 - Strongly in POO paradigm.
+- Automatic memory management.
 - Minimal runtime; is equal so tiny executables.
 - Faster as C.
 - Native compiled.
 
-## Common Compilation Steps
+## Compilation steps
 
-*With the internal compiler (thrushc)...*
+*With the compiler (thrushc)...*
 
 > `thrushc --executable hello.th -o hello && ./output/hello`
 
