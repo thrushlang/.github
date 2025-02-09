@@ -10,6 +10,7 @@
 
 - High level abstraction as Java and C#.
 - Non implicit cast for primitive types.
+- Strongly statically typed.
 - Strongly in POO paradigm as Java.
 - Minimal Runtime is equal so tiny executables.
 - Faster as C.
