@@ -9,7 +9,7 @@
 ## Features 
 
 - High level abstraction.
-- Native and embedded data structures, as Vectors Vec<T>.
+- Native and embedded data structures, as vectors.
 - Non implicit cast for primitive types.
 - Strongly statically typed.
 - Strongly in POO paradigm.
