@@ -8,18 +8,14 @@
 
 ## Features 
 
-- High level abstraction as Java and C#.
+- High level abstraction.
 - Non implicit cast for primitive types.
 - Strongly statically typed.
-- Strongly in POO paradigm as Java.
+- Strongly in POO paradigm.
 - Minimal runtime is equal so tiny executables.
 - Faster as C.
 - Native compiled.
-
-## Cross Compilation
-
-Thrush as Rust they use the **[LLVM](https://llvm.org/)** Infraestructure for compile to specific target architecture, enabling the **cross-compilation** completly independent to current host. In addition enabling development of the huge capatibilities for the future.
-
+
 ## Common Compilation Steps
 
 *With the internal compiler (thrushc)...*
