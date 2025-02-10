@@ -1,3 +1,3 @@
-# Thrush Lang
+# Thrush Programming Language
 
-~ *The profile repository for Thrush Lang Github Project*.
+~ *The profile repository for thrushlang github project*.
