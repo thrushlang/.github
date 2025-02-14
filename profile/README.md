@@ -17,7 +17,8 @@
 - Minimal runtime; is equal so tiny executables.
 - Faster as C.
 - Native compiled.
-
+
+
 ## Compilation steps
 
 *With the compiler (thrushc)...*
@@ -29,7 +30,7 @@
 > `thorium run`
 
 ```
-public @extern("printf") fn print(fmt :: String, ...): i32;
+public @extern("printf") fn print(fmt :: str, ...): i32;
 
 fn main() {
 
