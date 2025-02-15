@@ -11,7 +11,7 @@
 - High level abstraction.
 - Non implicit cast for primitive types.
 - Strongly statically typed.
-- Strongly in POO paradigm.
+- Strongly in OOP paradigm.
 - Automatic memory management.
 - Native and embedded data structures, as vectors.
 - Minimal runtime; is equal so tiny executables.
