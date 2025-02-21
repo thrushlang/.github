@@ -13,7 +13,7 @@
 - Strongly statically typed.
 - Strongly in OOP paradigm.
 - Automatic memory management.
-- Native and embedded data structures, as vectors.
+- Partial memory safety.
 - Minimal runtime; is equal so tiny executables.
 - Faster as C.
 - Native compiled.
