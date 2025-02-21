@@ -9,15 +9,14 @@
 ## Features 
 
 - High level abstraction.
-- Non implicit cast for primitive types.
+- Non-explicit cast for primitive types.
 - Strongly statically typed.
 - Strongly in OOP paradigm.
 - Automatic memory management.
 - Partial memory safety.
-- Minimal runtime; is equal so tiny executables.
+- Minimal runtime structure; is equal so tiny executables.
 - Faster as C.
 - Native compiled.
-
 
 ## Compilation steps
 
