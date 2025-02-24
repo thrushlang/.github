@@ -16,7 +16,7 @@
 - Partial memory safety.
 - Minimal runtime structure; is equal so tiny executables.
 - Faster as C.
-- Native compiled.
+- Compiled to machine code.
 
 ## Compilation steps
 
