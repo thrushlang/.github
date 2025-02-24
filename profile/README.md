@@ -4,7 +4,7 @@
 
 <h1 align="center">Thrush Programming Language</h1>
 
-**Thrush Programming Language** is strongly statically typed, AOT native compiled, highly optimized, general-purpose programming language to build maintainable software.
+**Thrush Programming Language** is strongly statically typed, AOT compiled to machine code, highly optimized, **general-purpose** programming language to build maintainable software.
 
 ## Features 
 
