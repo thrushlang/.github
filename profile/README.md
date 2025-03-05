@@ -18,6 +18,10 @@
 - Faster as C.
 - Compiled to machine code.
 
+## Shiny Features
+
+- Support for quantum programming for quantum machines using qubits.
+
 ## Compilation steps
 
 *With the compiler (thrushc)...*
