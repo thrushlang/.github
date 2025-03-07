@@ -20,7 +20,7 @@
 
 ## Shiny Features
 
-- Support for quantum programming for quantum machines using qubits.
+- Support for quantum programming for quantum machines using Q# as a backend compiler.
 
 ## Compilation steps
 
