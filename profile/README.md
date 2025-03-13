@@ -14,7 +14,7 @@ The **Thrush Programming Language**. A programming language dedicated to creatin
 - Strongly in OOP paradigm.
 - Automatic memory management.
 - Partial memory safety.
-- Minimal runtime structure; is equal so tiny executables.
+- Ahead of time compilation.
 - Faster compilation times.
 - Faster as C.
 - Compiled to machine code.
