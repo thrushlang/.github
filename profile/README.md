@@ -53,7 +53,7 @@ fn main() {
 
 ## Contribute
 
-- If you're interested in contributing to the project, let us know by visiting our official social media channels below.
+- If you're interested in contributing to the project, let us know by visiting our official social networks below.
 
 ## Social Networks
 
