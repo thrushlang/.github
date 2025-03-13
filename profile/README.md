@@ -15,7 +15,7 @@ The **Thrush Programming Language**. A programming language dedicated to creatin
 - Automatic memory management.
 - Partial memory safety.
 - Minimal runtime structure; is equal so tiny executables.
-- Minimal compilation times.
+- Faster compilation times.
 - Faster as C.
 - Compiled to machine code.
 
@@ -27,18 +27,26 @@ The **Thrush Programming Language**. A programming language dedicated to creatin
 
 *With the compiler (thrushc)...*
 
-> `thrushc --executable hello.th -o hello && ./output/hello`
+```console
+thrushc --executable hello.th -o hello && ./output/hello
+```
 
 *With the package manager...* (**Coming soon**)
 
-> `thorium run`
+```console
+thorium run
+```
 
 ```
 public @extern("printf") fn print(fmt :: str, ...): i32;
 
 fn main() {
 
-    print("Hello World!")
+    for var i: i64 = 0; a < 100; a++; {
+
+        print("%ld %s", i, "Hello World!")
+  
+    } 
 
 }
 ```
