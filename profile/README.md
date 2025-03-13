@@ -15,6 +15,7 @@
 - Automatic memory management.
 - Partial memory safety.
 - Minimal runtime structure; is equal so tiny executables.
+- Minimal compilation times.
 - Faster as C.
 - Compiled to machine code.
 
