@@ -53,8 +53,8 @@ fn main() {
 
 ## Contribute
 
-- If you're interested in contributing to the project, let us know by visiting our official social networks below.
+- If you're interested in contributing to the project and you're a **Spanish speaker**, let us know by visiting our official social media channels below.
 
-## Social Networks
+## Social Media
 
 [![](https://dcbadge.limes.pink/api/server/https://discord.gg/DJaVs4kM9U)](https://discord.gg/DJaVs4kM9U)
