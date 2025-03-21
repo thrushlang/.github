@@ -43,7 +43,7 @@ fn print(fmt :: str) s32 @public @ignore @extern("printf");
 fn fibonacci(n :: u64) u64 {
 
     if n <= 1 {
-        return n
+        return n;
     }
 
     return fibonacci(n - 2) + fibonacci(n - 1);
