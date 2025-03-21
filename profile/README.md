@@ -38,7 +38,7 @@ thorium run
 ```
 
 ```
-public extern("printf") fn print(fmt :: str, ...) s32;
+fn print(fmt :: str) s32 @public @ignore @extern("printf");
 
 fn fibonacci(n :: u64) u64 {
 
