@@ -46,10 +46,7 @@ fn fibonacci(n :: u64) u64 {
         return n;
     }
 
-    local fib_left: u64 = fibonacci(n - 1);
-    local fib_right: u64 = fibonacci(n - 2);
-
-    return fib_left + fib_right;
+    return fibonacci(n - 2) + fibonacci(n - 1);
 
 }
 
