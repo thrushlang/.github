@@ -43,7 +43,7 @@ fn print(fmt :: str) s32 @public @ignore @extern("printf");
 fn fibonacci(n :: u64) u64 {
 
     if n <= 1 {
-        return n;
+        return n
     }
 
     return fibonacci(n - 2) + fibonacci(n - 1);
@@ -52,9 +52,11 @@ fn fibonacci(n :: u64) u64 {
 
 fn main() { 
 
-    local fib: u64 = fibonacci(10);
+    for local i: u64 = 0; i < 10; i++; {
 
-    print("'10' fibonacci: %ld", fib);
+        print("fibonacci de '%ld': %ld\n", i, fibonacci(i));
+
+    }
 
 }
 ```
