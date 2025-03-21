@@ -54,7 +54,7 @@ fn main() {
 
     for local i: u64 = 0; i < 10; i++; {
 
-        print("fibonacci de '%ld': %ld\n", i, fibonacci(i));
+        print("fibonacci of '%ld': %ld\n", i, fibonacci(i));
 
     }
 
