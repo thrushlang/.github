@@ -28,7 +28,7 @@ The **Thrush Programming Language**. A programming language dedicated to creatin
 *With the compiler (thrushc)...*
 
 ```console
-thrushc --executable hello.th -o hello && ./output/hello
+thrushc hello.th -o hello && ./hello
 ```
 
 *With the package manager...* (**Coming soon**)
