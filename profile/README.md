@@ -29,15 +29,15 @@ The **Thrush Programming Language** compiles using the **[LLVM](https://llvm.org
 
 Thrush compiles AOT to LLVM bitcode, which is then compiled to optimized machine code, functioning similarly to Rust and Swift.
 
-### Example - Fibonacci sequence 
+## Example - Fibonacci sequence 
 
-#### Compiler
+### Compiler
 
 ```console
 thrushc fibonacci.th -o fibonacci && ./fibonacci
 ```
 
-#### Package Manager
+### Package Manager
 
 ```console
 thorium run
