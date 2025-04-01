@@ -23,6 +23,12 @@ The **Thrush Programming Language**. A programming language dedicated to creatin
 
 - Support for quantum programming for quantum machines using Q# as a backend compiler.
 
+## LLVM as Backend Compiler 
+
+The **Thrush Programming Language** compiles using the LLVM project as its primary code generator, which is a backend compiler. It generally compiles bytecode or intermediate languages to assembler or machine code for the 45 different architectures and variants available. 
+
+Thrush compiles AOT to LLVM bitcode, which is then compiled to optimized machine code, functioning similarly to Rust and Swift.
+
 ## Compilation steps
 
 *With the compiler (thrushc)...*
