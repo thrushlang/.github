@@ -31,7 +31,7 @@ Thrush compiles AOT to LLVM bitcode, which is then compiled to optimized machine
 
 ### Example - Fibonacci sequence 
 
-####.Compiler
+#### Compiler
 
 ```console
 thrushc fibonacci.th -o fibonacci && ./fibonacci
