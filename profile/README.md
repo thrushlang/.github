@@ -31,13 +31,13 @@ Thrush compiles AOT to LLVM bitcode, which is then compiled to optimized machine
 
 ## Compilation steps
 
-*With the compiler (thrushc)...*
+### Compiler
 
 ```console
 thrushc fibonacci.th -o fibonacci && ./fibonacci
 ```
 
-*With the package manager...* (**Coming soon**)
+### Package Manager (**Coming soon**)
 
 ```console
 thorium run
