@@ -21,7 +21,7 @@ The **Thrush Programming Language**. A programming language dedicated to creatin
 
 ## Shiny Features
 
-- Support for quantum programming for quantum machines using Q# as a backend compiler.
+- Support for quantum programming for quantum machines using Q# underhood.
 
 ## LLVM
 
