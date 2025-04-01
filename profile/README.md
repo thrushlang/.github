@@ -43,6 +43,8 @@ thrushc fibonacci.th -o fibonacci && ./fibonacci
 thorium run
 ```
 
+### Code
+
 ```
 fn print(fmt :: str) s32 @public @ignore @extern("printf");
 
