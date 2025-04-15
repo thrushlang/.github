@@ -19,6 +19,7 @@ Introducing concepts such as:
 - Compile-time execution with Just-In-Time compiler.
 - Automatic deallocation when reaching EFC.
 - Automatic construction of destructors.
+- Reference and hidden dereference systems.
 
 ## Features 
 
