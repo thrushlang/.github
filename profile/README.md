@@ -75,4 +75,4 @@ fn main() {
 
 ## Social Media
 
-[![](https://dcbadge.limes.pink/api/server/https://discord.gg/DJaVs4kM9U)](https://discord.gg/DJaVs4kM9U)
+[![Thrush Programming Language\n](https://invite.casperiv.dev?inviteCode=DJaVs4kM9U)](https://discord.gg/DJaVs4kM9U)
