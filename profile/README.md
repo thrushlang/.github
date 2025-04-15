@@ -16,7 +16,7 @@ Introducing concepts such as:
 - Simple error handling.
 - Strong Foreign Function Interface (FFI).
 - Simplified low-level memory control.
-- Compile-time execution with Just-In-Time compiler
+- Compile-time execution with Just-In-Time compiler.
 - Automatic deallocation when reaching EFC.
 - Automatic construction of destructors.
 
