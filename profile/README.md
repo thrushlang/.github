@@ -10,7 +10,7 @@ The **Thrush Programming Language**. A programming language dedicated to creatin
 
 The Thrush Orogramming Language aims to simplify the inherently tedious process of programming in a systems language, streamlining the experience while maintaining the essence of a proper systems language.
 
-Introducing concepts such as
+Introducing concepts such as:
 
 - Memory safety
 - Simple error handling
