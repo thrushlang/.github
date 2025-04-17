@@ -35,10 +35,6 @@ Introducing concepts such as:
 - Faster as C.
 - Compiled to machine code.
 
-## Shiny Features
-
-- Support for quantum programming for quantum machines using Q# underhood.
-
 ## Example - Fibonacci sequence 
 
 ### Compiler
