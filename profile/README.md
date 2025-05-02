@@ -78,6 +78,7 @@ fn main() {
 ## Contribute
 
 - If you're interested in contributing to the project and you're a **Spanish speaker**, let us know by visiting our official social media channels below.
+- If you already know Rust but not LLVM, we're willing to teach.
 
 ## Social Media
 
