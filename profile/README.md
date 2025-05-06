@@ -24,13 +24,10 @@ Introducing concepts such as:
 ## Features 
 
 - High level abstraction.
-- Non-explicit cast for primitive types.
-- Strongly statically typed.
+- Statically typed.
 - Strongly in OOP paradigm.
-- Automatic memory management.
+- Automatic memory management through ARC.
 - Partial memory safety.
-- Ahead of time compilation.
-- Just in time compilation.
 - Faster compilation times.
 - Faster as C.
 - Compiled to machine code.
