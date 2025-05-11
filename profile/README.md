@@ -8,28 +8,22 @@ The **Thrush Programming Language**. A programming language dedicated to creatin
 
 ## Philosophy
 
-The Thrush Programming Language aims to simplify the inherently tedious process of programming in a systems language, streamlining the experience while maintaining the essence of a proper systems language.
+### The breach
 
-Introducing concepts such as:
+There's a breach right now, and that's the fact that there's no memory-safe language focused on systems development that also offers beginner-friendly capabilities and a language environment. Thrush attempts to bridge this breach.
 
-- Memory safety.
-- Simple error handling.
-- Strong Foreign Function Interface (FFI).
-- Simplified low-level memory control.
-- Compile-time execution with Just-In-Time compiler.
-- Automatic deallocation when reaching EFC.
-- Automatic construction of destructors.
-- Reference and hidden dereference systems.
+### The Thrush solution 
 
-## Features 
+The programming language focuses on providing a beginner-friendly yet advanced experience while also allowing for complete adaptability in certain circumstances, allowing for highly adaptable code.
 
-- High level abstraction.
-- Statically typed.
-- Strongly in OOP paradigm.
-- Automatic memory management through ARC.
-- Partial memory safety.
-- Faster compilation times.
-- Faster as C.
+## Key Points 
+
+- Intrinsic manipulation of code generation.
+- Strong sublanguage, with the ability to interoperate directly with **[LLVM](https://llvm.org/)** and **Assembler**.
+- Strongly statically typed.
+- Memory safety environment.
+- Complex unsafe environment.
+- C interop.
 - Compiled to machine code.
 
 ## Example - Fibonacci sequence 
