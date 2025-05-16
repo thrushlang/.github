@@ -28,10 +28,14 @@ The programming language focuses on providing a beginner-friendly yet advanced e
 
 ## Example - Fibonacci sequence 
 
-### Compiler
+### Compiler (Not beginner-friendly)
+
+#### Linux
 
 ```console
-thrushc fibonacci.th -o fibonacci && ./fibonacci
+mkdir build
+thrushc -build-dir "build/" -llvm fibonacci.th -lkflags "-ofibonacci;-melf_x86_64;--dynamic-linker=/lib64/ld-linux-x86-64.so.2;/usr/lib/crt1.o;/usr/lib/crti.o;/usr/lib/gcc/x86_64-pc-linux-gnu/15.
+1.1/crtbegin.o;-L/usr/lib;-L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1;-lc;/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtend.o;/usr/lib/crtn.o" && ./fibonacci
 ```
 
 ### Package Manager
