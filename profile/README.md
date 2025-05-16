@@ -43,9 +43,9 @@ thorium run
 ### Code
 
 ```
-fn print(fmt :: ptr) s32 @public @ignore @extern("printf");
+fn print(fmt: ptr) s32 @public @ignore @extern("printf");
 
-fn fibonacci(n :: u64) u64 @alwaysinline @strongstack @hot {
+fn fibonacci(n: u64) u64 @alwaysinline @strongstack @hot {
 
     if n <= 1 {
         return n;
