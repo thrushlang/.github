@@ -20,15 +20,21 @@ For example:
 
 The programming language focuses on providing an advanced yet beginner-friendly experience while allowing for complete adaptability in certain circumstances, allowing for highly adaptable code based on the programmer's experience.
 
-## Key Points 
+## Key points for advanced programmers
 
 - Intrinsic manipulation of code generation.
 - Strong sublanguage, with the ability to interoperate directly with **[LLVM](https://llvm.org/)** and **Assembler**.
 - Strongly statically typed.
-- Memory safety environment.
 - Complex unsafe environment.
 - C interop.
-- Compiled to machine code.
+
+## Key points for beginner programmers
+
+- Automatic memory management (thanks, ``Swift``, for the concept).
+- By default, a lot of good abstractions.
+- Partial memory safety environment.
+- Lightweight software (C-like).
+- Minimal runtime requirements (only the C runtime).
 
 ## Example - Fibonacci sequence 
 
