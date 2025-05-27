@@ -76,7 +76,7 @@ fn main() {
         local format: str = "fibonacci of '%ld': %ld\n";
 
         // Explicit pointer arithmetic.
-        print(carry[ptr] address format[0][0], i, fibonacci(i));
+        print(load ptr, address format[0][0], i, fibonacci(i));
 
     }
 
