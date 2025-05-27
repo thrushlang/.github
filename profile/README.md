@@ -10,11 +10,11 @@ The **Thrush Programming Language**. A programming language dedicated to creatin
 
 ### The breach
 
-There's currently a breach: there's no memory-safe language focused on systems development that also offers easy-to-use features and a language environment. 
+There is currently a breach: no language focused on systems development exists that also offers easy-to-use features and a user-friendly language environment.
 For example:
 
 - ``Rust`` Complexity is inherited by the borrow checker itself, and in addition to having an advanced **[LLVM](https://llvm.org/)** lifetimes system, by default it is not beginner-friendly.
-- ``Swift`` It is beginner-friendly, but at the same time it cannot be used as a systems language due to its very closed systems compared to FFI and C. It is not advanced-friendly.
+- ``C++`` It's C++.
 
 ### The Thrush solution 
 
@@ -30,7 +30,6 @@ The programming language focuses on providing an advanced yet beginner-friendly 
 
 ## Key points for beginner programmers
 
-- Automatic memory management (thanks, ``Swift``, for the concept).
 - By default, a lot of good abstractions.
 - Partial memory safety environment.
 - Lightweight software (C-like).
