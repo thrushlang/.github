@@ -73,10 +73,13 @@ fn main() {
 
     for local i: u64 = 0; i < 10; i++; {
 
-        local format: str = "fibonacci of '%ld': %ld\n";
+        local fmt: str = "fibonacci of '%ld': %ld\n";
 
         // Explicit pointer arithmetic.
-        print(load ptr, address format[0][0], i, fibonacci(i));
+        instr raw_fmt: ptr = load ptr, address fmt[0][0];
+
+        // Explicit pointer arithmetic.
+        print(raw_fmt, i, fibonacci(i));
 
     }
 
