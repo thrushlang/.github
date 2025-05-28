@@ -4,7 +4,7 @@
 
 <h1 align="center">Thrush Programming Language</h1>
 
-The **Thrush Programming Language**. A programming language dedicated to creating software that is highly adaptable to the programmer's experience.
+The **Thrush Programming Language**. A systems programming language dedicated to creating highly adaptable and maintainable software.
 
 ## Philosophy
 
