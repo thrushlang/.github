@@ -4,41 +4,89 @@
 
 <h1 align="center">Thrush Programming Language</h1>
 
-The **Thrush Programming Language**. A systems programming language dedicated to creating highly adaptable and maintainable software.
+The **Thrush Programming Language**. A system programming language that revolutionizes low-level control, intuitive abstraction for beginners, and limitless IR low-level control for experts.
 
 ## Philosophy
 
-### The breach
+### The problem
 
-There is currently a breach: no language focused on systems development exists that also offers easy-to-use features and a user-friendly language environment.
-For example:
-
-- ``Rust`` Complexity is inherited by the borrow checker itself, and in addition to having an advanced **[LLVM](https://llvm.org/)** lifetimes system, by default it is not beginner-friendly.
-- ``C++`` It's C++.
+Systems languages like ``C``, ``C++``, and ``Rust`` have yet to fully explore low-level programming potential, particularly in explicit manipulation of intermediate representations (IRs). Direct IR control empowers developers with seamless, high-level orchestration of assembly-like operations from source code, eliminating the need to resort to raw assembly.
 
 ### The Thrush solution 
 
-The programming language focuses on providing an advanced yet beginner-friendly experience while allowing for complete adaptability in certain circumstances, allowing for highly adaptable code based on the programmer's experience.
+Thrush empowers developers by enabling IR manipulation through language-integrated Low-Level Instructions (LLI), a high-level, streamlined interface for GCC and LLVM intrinsic instructions, while prioritizing beginners with a future memory-safe abstraction layer built atop its powerful, low-level system.
 
-## Key points for advanced programmers
+## Why Thrush over C, C++ or Rust?
 
-- Intrinsic manipulation of code generation.
-- Strong sublanguage, with the ability to interoperate directly with **[LLVM](https://llvm.org/)** and **Assembler**.
-- Strongly statically typed.
-- Complex unsafe environment.
-- C interop.
+Thrush holds immense promise for bare-metal and embedded systems development through its innovative low-level instructional concepts, particularly its language-integrated Low-Level Instructions (LLI) for seamless IR manipulation with GCC and LLVM intrinsics. While prioritizing simplicity, Thrush will layer a memory-safe abstraction atop its powerful low-level system, making it beginner-friendly. Depending on your needs, you might still choose C, C++, or Rust, but Thrush offers a unique blend of control and accessibility.
 
-## Key points for beginner programmers
+### Low Level Control
 
-- All-in-one, robust, and lightweight compiler.
-- By default, a lot of good abstractions.
-- Partial memory safety environment.
-- Lightweight software (C-like).
-- Minimal runtime requirements (only the C runtime).
+- Thrush empowers developers to compile low-level instructions directly to a specified target from source code, enabling precise, architecture-specific optimization with unparalleled ease.
+
+```rust
+compile @target("armv7e-m") @output("example.s") @asm {
+  instr allocated_u8: ptr<u8> = alloc stack!, { u8, @align(4) };
+  write 8, allocated_u8;
+};
+```
+
+- Thrush enables seamless integration of low-level instructions alongside their high-level counterparts, allowing developers to fluidly switch between abstraction levels within the same codebase.
+
+```rust
+fn main() {
+    local number: u8 = 0;
+
+    // Low-level instruction for direct memory access
+    instr loaded_value: u8 = load u8, number;
+}
+```
+
+- Thrush enables seamless embedding of linear assembler within the compilation process, offering direct, streamlined control over architecture-specific code generation.
+
+```rust
+fn main() {
+    asm {
+      section .text
+      global _start
+
+      _start:
+          mov rax, 60
+          mov rdi, 0
+          syscall
+    };
+}
+```
+
+- Thrush enables seamless compile-time code execution, empowering developers to perform computations and optimizations directly during compilation with a simple, intuitive syntax.
+
+```rust
+fn comptime_sum(a: u8, a: u8) u16 @compiletime {
+  // Non-explicit cast is allowed.
+  return a + b;
+}
+
+fn main() {
+   comptime_sum(15, 15);
+}
+```
+
+- And many more unique features when the language base is finished! ~ Kevin Benavides
+
+## Feautures
+
+- Direct Code Generation Control: Manipulate intermediate representations (IR) and low-level instructions for precise, architecture-specific optimizations.
+- Powerful Sublanguage Integration: Seamlessly interoperate with LLVM and assembler, enabling fine-grained control over code generation.
+- Robust Static Typing: Enforce type safety with a strongly statically typed system for reliable, high-performance code.
+- Flexible Unsafe Environment: Harness a complex, unsafe low-level system for maximum control in bare-metal and embedded development.
+- C Interoperability: Integrate effortlessly with C codebases, leveraging existing libraries and systems.
+- Unified, Lightweight Compiler: A robust, all-in-one compiler designed for simplicity and ease of use.
+- C-Like Simplicity: Lightweight syntax inspired by C, making it approachable yet powerful.
+- Minimal Runtime Overhead
 
 ## Example - Fibonacci sequence 
 
-### Compiler (Not beginner-friendly)
+### Compiler
 
 #### Linux
 
@@ -88,8 +136,8 @@ fn main() {
 
 ## Contribute
 
-- If you're interested in contributing to the project and you're a **Spanish speaker**, let us know by visiting our official social media channels below.
-- If you already know Rust but not LLVM, we're willing to teach.
+We're looking for contributors for our project! If you're a Spanish speaker and would like to contribute, contact us through our official social media channels.
+Already know Rust but not LLVM? Don't worry! We're happy to teach you.
 
 ## Social Media
 
