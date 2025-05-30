@@ -37,7 +37,7 @@ compile @target("armv7e-m") @output("example.s") @asm {
 fn main() {
     local number: u8 = 0;
 
-    // Low-level instruction for direct memory access
+    // Low-level instruction for direct memory access.
     instr loaded_value: u8 = load u8, number;
 }
 ```
