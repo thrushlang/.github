@@ -73,7 +73,7 @@ fn main() {
 
 - And many more unique features when the language base is finished! ~ Kevin Benavides
 
-## Feautures
+## Features
 
 - Direct Code Generation Control: Manipulate intermediate representations (IR) and low-level instructions for precise, architecture-specific optimizations.
 - Powerful Sublanguage Integration: Seamlessly interoperate with LLVM and assembler, enabling fine-grained control over code generation.
@@ -83,6 +83,18 @@ fn main() {
 - Unified, Lightweight Compiler: A robust, all-in-one compiler designed for simplicity and ease of use.
 - C-Like Simplicity: Lightweight syntax inspired by C, making it approachable yet powerful.
 - Minimal Runtime Overhead
+
+## State
+
+- The Thrush Compiler ``thrushc``: The Thrush Compiler is still in active development. We're currently focused on building out its complex layer of low-level instructions and developing a robust linter.
+- The Thrush Package Manager ``thorium``: The package manager has already begun development but is not yet complete.
+
+> [!NOTE]  
+> If you want to accelerate the speed of language development, please consider **donating** to the creator or joining us and carrying out the language.
+
+## Documentation
+
+The documentation isn't ready yet, as the language is still in deep development. You can see the speculative syntax at https://github.com/thrushlang/syntax.
 
 ## Example - Fibonacci sequence 
 
