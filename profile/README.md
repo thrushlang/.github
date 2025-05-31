@@ -90,8 +90,6 @@ fn main() {
 
 - The production-ready compiler is estimated to weigh 20MB in its entirety, but only with support for ``x86_64``. Research is currently underway to make it lightweight yet portable with all available backend architectures.
 
-- The compiler includes precompiled C runtimes (``glibc``, ``musl``, ``msvcrt``, ``libcmt``) for x86_64 architectures, Linux & Windows, to allow linking files without having to search for standard libraries on each operating system. It is also possible to pass custom arguments to the linker to use any library or to specify a custom C runtime.
-
 ## State
 
 - The Thrush Compiler ``thrushc``: The Thrush Compiler is still in active development. We're currently focused on building out its complex layer of low-level instructions and developing a robust linter.
