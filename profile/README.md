@@ -51,14 +51,18 @@ fn main() {
 
 ```rust
 
-asmfn do_something() void {
-    mov rax, 60
-    mov rdi, 0
-    syscall
-} {}
+asmfn invoke_exit() void {
+    "mov $$60, %rax",
+    "mov $$1, %rdi",
+    "syscall"
+} { 
+    "~{rax}~{rdi}"
+}
 
 fn main() {
-    callasm do_something();
+  
+  callasm invoke_exit();
+  
 }
 ```
 
