@@ -27,7 +27,7 @@ Thrush holds immense promise for bare-metal and embedded systems development thr
 ```rust
 compile @target("armv7e-m") @output("example.s") @asm {
   instr allocated_u8: ptr[u8] = alloc stack!, { u8, @align(4) };
-  write 8, allocated_u8;
+  write allocated_u8, u8 8;
 };
 ```
 
