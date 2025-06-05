@@ -148,7 +148,7 @@ fn main() {
         instr raw_fmt_str: ptr = load ptr, address raw_fmt { 0, 0 };
 
         // Explicit pointer arithmetic.
-        print(raw_fmt, i, fibonacci(i));
+        print(raw_fmt_str cast ptr, i, fibonacci(i));
 
     }
 
