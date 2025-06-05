@@ -90,9 +90,8 @@ fn main() {
 
 ## Goals
 
-- The Thrush Compiler (``thrushc``) is very compact, has the LLVM linker (``lld``) embedded, and supports the ``x86_64`` architecture for the moment, but with the ability to generate executables with formats such as ``COFF`` (Windows), ``ELF`` (Linux), ``Mach0`` (MacOS), and ``WASM`` (WebAssembly).
-
-- The production-ready compiler is estimated to weigh 20MB in its entirety, but only with support for ``x86_64``. Research is currently underway to make it lightweight yet portable with all available backend architectures.
+- The Thrush Compiler has the ability to output pre-compiled object files ``.o`` for the architecture as well as assembler and its counterparts without going through the pass manager for optimization.
+- The Thrush Compiler is very lightweight ``20``MB, considering that it contains embedded Clang for Linux and Windows, to be used as a wrapper to the closest linker.
 
 ## State
 
@@ -110,20 +109,12 @@ The documentation isn't ready yet, as the language is still in deep development.
 
 ### Compiler
 
-#### Linux 
+#### Linux
 
 ```console
 mkdir build
-thrushc -build-dir="build" -llvm -clang fibonacci.th -start -o fibonacci -end
-./fibonacci
-```
-
-#### Windows 
-
-```console
-mkdir build
-thrushc -build-dir="build" -llvm -clang fibonacci.th -start -o fibonacci.exe -end
-.\fibonacci.exe
+thrushc -build-dir "build/" -llvm fibonacci.th -llvm-linker-flags "-ofibonacci;-melf_x86_64;--dynamic-linker=/lib64/ld-linux-x86-64.so.2;/usr/lib/crt1.o;/usr/lib/crti.o;/usr/lib/gcc/x86_64-pc-linux-gnu/15.
+1.1/crtbegin.o;-L/usr/lib;-L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1;-lc;/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtend.o;/usr/lib/crtn.o" && ./fibonacci
 ```
 
 ### Package Manager
