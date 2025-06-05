@@ -45,16 +45,15 @@ fn main() {
 - Thrush enables seamless embedding of linear assembler within the compilation process, offering direct, streamlined control over architecture-specific code generation.
 
 ```rust
-fn main() {
-    asm {
-      section .text
-      global _start
 
-      _start:
-          mov rax, 60
-          mov rdi, 0
-          syscall
-    };
+asmfn test() void {
+    mov rax, 60
+    mov rdi, 0
+    syscall
+} {}
+
+fn main() {
+    callasm test();
 }
 ```
 
