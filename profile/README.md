@@ -46,14 +46,14 @@ fn main() {
 
 ```rust
 
-asmfn test() void {
+asmfn do_something() void {
     mov rax, 60
     mov rdi, 0
     syscall
 } {}
 
 fn main() {
-    callasm test();
+    callasm do_something();
 }
 ```
 
