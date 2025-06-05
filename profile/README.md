@@ -141,8 +141,11 @@ fn main() {
 
         local fmt: str = "fibonacci of '%ld': %ld\n";
 
+        // Pointer transformation.
+        instr raw_fmt: ptr[str] = rawptr fmt;
+
         // Explicit pointer arithmetic.
-        instr raw_fmt: ptr = load ptr, address fmt[0][0];
+        instr raw_fmt_str: ptr = load ptr, address raw_fmt { 0, 0 };
 
         // Explicit pointer arithmetic.
         print(raw_fmt, i, fibonacci(i));
