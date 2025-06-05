@@ -6,6 +6,11 @@
 
 The **Thrush Programming Language**. A system programming language that revolutionizes low-level control, intuitive abstraction for beginners, and limitless IR low-level control for experts.
 
+## Inspiration
+
+- The language is largely based on the syntax of its source language, Rust. However, it has some unique features.
+- Its name is Thrush, reminiscent of the **[thrush](https://en.wikipedia.org/wiki/Thrush_(bird))** bird, a relative of the **Turdidae** family. Its pronunciation differs from the bird's name; it's actually T.. Rush, not Thrush.
+
 ## Philosophy
 
 ### The problem
