@@ -85,7 +85,6 @@ fn main() {
 - Flexible Unsafe Environment: Harness a complex, unsafe low-level system for maximum control in bare-metal and embedded development.
 - C Interoperability: Integrate effortlessly with C codebases, leveraging existing libraries and systems.
 - Unified, Lightweight Compiler: A robust, all-in-one compiler designed for simplicity and ease of use.
-- C-Like Simplicity: Lightweight syntax inspired by C, making it approachable yet powerful.
 - Minimal Runtime Overhead
 
 ## Goals
