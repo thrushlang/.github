@@ -113,8 +113,16 @@ The documentation isn't ready yet, as the language is still in deep development.
 
 ```console
 mkdir build
-thrushc -build-dir "build/" -llvm fibonacci.th -llvm-linker-flags "-ofibonacci;-melf_x86_64;--dynamic-linker=/lib64/ld-linux-x86-64.so.2;/usr/lib/crt1.o;/usr/lib/crti.o;/usr/lib/gcc/x86_64-pc-linux-gnu/15.
-1.1/crtbegin.o;-L/usr/lib;-L/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1;-lc;/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtend.o;/usr/lib/crtn.o" && ./fibonacci
+thrushc -build-dir="build" -llvm -clang fibonacci.th -start -o fibonacci -end
+./fibonacci
+```
+
+#### Windows
+
+```console
+mkdir build
+thrushc -build-dir="build" -llvm -clang fibonacci.th -start -o fibonacci.exe -end
+.\fibonacci.exe
 ```
 
 ### Package Manager
