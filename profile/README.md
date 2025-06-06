@@ -51,7 +51,7 @@ fn main() {
 
 ```rust
 
-asmfn invoke_exit() void {
+asmfn invoke_exit_syscall() void {
     "mov $$60, %rax",
     "mov $$1, %rdi",
     "syscall"
@@ -60,9 +60,7 @@ asmfn invoke_exit() void {
 }
 
 fn main() {
-  
-  callasm invoke_exit();
-  
+  invoke_exit_syscall();
 }
 ```
 
