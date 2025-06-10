@@ -152,7 +152,7 @@ thorium run
  * 2. Iteration over the three dimensions to print each element.
  * 3. Modification of a specific element using a dynamic index and a complex expression.
  * 4. Verification of the modification by reprinting the matrix.
- */
+*/
 
 fn print(fmt: ptr) s32 @public @ignore @extern("printf");
 
