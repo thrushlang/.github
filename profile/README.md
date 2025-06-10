@@ -215,6 +215,28 @@ fn main() {
             }
         }
     }
+
+    /*
+      3D Matrix Simulation Output:
+      
+      - Cube[0,0,0] = 10
+      - Cube[0,0,1] = 11
+      - Cube[0,1,0] = 12
+      - Cube[0,1,1] = 13
+      - Cube[1,0,0] = 14
+      - Cube[1,0,1] = 15
+      - Cube[1,1,0] = 16
+      - Cube[1,1,1] = 17
+      - Modified Cube[1,0,1] to 20
+      - Cube[0,0,0] = 10
+      - Cube[0,0,1] = 11
+      - Cube[0,1,0] = 12
+      - Cube[0,1,1] = 13
+      - Cube[1,0,0] = 14
+      - Cube[1,0,1] = 20
+      - Cube[1,1,0] = 16
+      - Cube[1,1,1] = 17
+    */
 }
 ```
 
