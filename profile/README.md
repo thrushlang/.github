@@ -132,38 +132,89 @@ thrushc -build-dir="build" -llvm -clang fibonacci.th -start -o fibonacci.exe -en
 thorium run
 ```
 
-### Code
+### Code Example - 3D Matrix
 
-```
+```rust
+/*
+ * 3D Matrix Representation (2x2x2) simulated using a one-dimensional array.
+ *
+ * Element access is performed using a linear index calculation:
+ * index = z * (dim_y * dim_x) + y * dim_x + x
+ *
+ * Where:
+ * - z: Index in the Z dimension (depth)
+ * - y: Index in the Y dimension (rows)
+ * - x: Index in the X dimension (columns)
+ * - dim_x, dim_y, dim_z: Total dimensions of the matrix along each axis.
+ *
+ * This code demonstrates:
+ * 1. Initialization of the matrix with predefined values.
+ * 2. Iteration over the three dimensions to print each element.
+ * 3. Modification of a specific element using a dynamic index and a complex expression.
+ * 4. Verification of the modification by reprinting the matrix.
+ */
+
 fn print(fmt: ptr) s32 @public @ignore @extern("printf");
 
-fn fibonacci(n: u64) u64 @alwaysinline @strongstack @hot {
-
-    if n <= 1 {
-        return n;
+fn main() {
+    // 2x2x2 u32 matrix (simulated with an 8-element array)
+    // [z][y][x]
+    local mut cube: array[u32; 8] = [
+        10, 11, 12, 13,
+        14, 15, 16, 17
+    ];
+    
+    local dim_z: u32 = 2;
+    local dim_y: u32 = 2;
+    local dim_x: u32 = 2;
+    
+    // 3D index calculation: z * (dim_y * dim_x) + y * dim_x + x
+    local yx_plane_size: u32 = dim_y * dim_x; // 2 * 2 = 4
+    
+    local fmt_cube: str = "Cube[%ld,%ld,%ld] = %ld\n";
+    
+    // Phase 1: Print all elements
+    for local z_idx: u32 = 0; z_idx < dim_z; ++z_idx; {
+        for local y_idx: u32 = 0; y_idx < dim_y; ++y_idx; {
+            for local x_idx: u32 = 0; x_idx < dim_x; ++x_idx; {
+                local linear_idx: u32 = (z_idx * yx_plane_size) + (y_idx * dim_x) + x_idx;
+                local val: u32 = cube[linear_idx](u32);
+                print(load ptr, address fmt_cube { 0, 0 }, z_idx, y_idx, x_idx, val);
+            }
+        }
     }
-
-    return fibonacci(n - 2) + fibonacci(n - 1);
-
-}
-
-fn main() { 
-
-    for local i: u64 = 0; i < 10; i++; {
-
-        local fmt: str = "fibonacci of '%ld': %ld\n";
-
-        // Transformation to pointer.
-        instr raw_fmt: ptr[str] = rawptr fmt;
-
-        // Explicit pointer arithmetic.
-        instr raw_fmt_str: ptr = load ptr, address raw_fmt { 0, 0 };
-
-        // Print the Fibonacci.
-        print(raw_fmt_str, i, fibonacci(i));
-
+    
+    // Phase 2: Assignment with complex expression as index
+    // cube[1,0,1] = cube[0,0,0] + (offset_val * 2)
+    local target_z: u32 = 1;
+    local target_y: u32 = 0;
+    local target_x: u32 = 1;
+    local target_linear_idx: u32 = (target_z * yx_plane_size) + (target_y * dim_x) + target_x;
+    
+    local source_z: u32 = 0;
+    local source_y: u32 = 0;
+    local source_x: u32 = 0;
+    local source_linear_idx: u32 = (source_z * yx_plane_size) + (source_y * dim_x) + source_x;
+    local source_val: u32 = cube[source_linear_idx](u32);
+    
+    local offset_val: u32 = 5;
+    local new_val: u32 = source_val + (offset_val * 2); // Complex expression
+    
+    cube[target_linear_idx] = new_val; // Assignment with dynamic index
+    
+    local fmt_mod_cube: str = "Modified Cube[%ld,%ld,%ld] to %ld\n";
+    print(load ptr, address fmt_mod_cube { 0, 0 }, target_z, target_y, target_x, new_val);
+    
+    // Phase 3: Print again to verify
+    for local z_idx_final: u32 = 0; z_idx_final < dim_z; ++z_idx_final; {
+        for local y_idx_final: u32 = 0; y_idx_final < dim_y; ++y_idx_final; {
+            for local x_idx_final: u32 = 0; x_idx_final < dim_x; ++x_idx_final; {
+                local linear_idx_final: u32 = (z_idx_final * yx_plane_size) + (y_idx_final * dim_x) + x_idx_final;
+                local val_final: u32 = cube[linear_idx_final](u32);
+                print(load ptr, address fmt_cube { 0, 0 }, z_idx_final, y_idx_final, x_idx_final, val_final);
+            }
+        }
     }
-
 }
 ```
 
