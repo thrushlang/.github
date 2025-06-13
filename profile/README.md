@@ -172,9 +172,9 @@ fn main() {
     local yx_plane_size: u32 = dim_y * dim_x; // 2 * 2 = 4
     
     // Phase 1: Print all elements
-    for local z_idx: u32 = 0; z_idx < dim_z; ++z_idx; {
-        for local y_idx: u32 = 0; y_idx < dim_y; ++y_idx; {
-            for local x_idx: u32 = 0; x_idx < dim_x; ++x_idx; {
+    for local mut z_idx: u32 = 0; z_idx < dim_z; ++z_idx; {
+        for local mut y_idx: u32 = 0; y_idx < dim_y; ++y_idx; {
+            for local mut x_idx: u32 = 0; x_idx < dim_x; ++x_idx; {
                 local linear_idx: u32 = (z_idx * yx_plane_size) + (y_idx * dim_x) + x_idx;
                 local val: u32 = deref cube[linear_idx];
                 print("Cube[%ld,%ld,%ld] = %ld\n" as ptr, z_idx, y_idx, x_idx, val);
@@ -193,19 +193,19 @@ fn main() {
     local source_y: u32 = 0;
     local source_x: u32 = 0;
     local source_linear_idx: u32 = (source_z * yx_plane_size) + (source_y * dim_x) + source_x;
-    local source_val: u32 = cube[source_linear_idx](u32);
+    local source_val: u32 = deref cube[source_linear_idx];
     
     local offset_val: u32 = 5;
     local new_val: u32 = source_val + (offset_val * 2); // Complex expression
     
     cube[target_linear_idx] = new_val; // Assignment with dynamic index
     
-    print("Modified Cube[%ld,%ld,%ld] to %ld\n" castptr ptr, target_z, target_y, target_x, new_val);
+    print("Modified Cube[%ld,%ld,%ld] to %ld\n" as ptr, target_z, target_y, target_x, new_val);
     
     // Phase 3: Print again to verify
-    for local z_idx_final: u32 = 0; z_idx_final < dim_z; ++z_idx_final; {
-        for local y_idx_final: u32 = 0; y_idx_final < dim_y; ++y_idx_final; {
-            for local x_idx_final: u32 = 0; x_idx_final < dim_x; ++x_idx_final; {
+    for local mut z_idx_final: u32 = 0; z_idx_final < dim_z; ++z_idx_final; {
+        for local mut y_idx_final: u32 = 0; y_idx_final < dim_y; ++y_idx_final; {
+            for local mut x_idx_final: u32 = 0; x_idx_final < dim_x; ++x_idx_final; {
                 local linear_idx_final: u32 = (z_idx_final * yx_plane_size) + (y_idx_final * dim_x) + x_idx_final;
                 local val_final: u32 = deref cube[linear_idx_final];
                 print("Cube[%ld,%ld,%ld] = %ld\n" as ptr, z_idx_final, y_idx_final, x_idx_final, val_final);
