@@ -176,8 +176,8 @@ fn main() {
         for local y_idx: u32 = 0; y_idx < dim_y; ++y_idx; {
             for local x_idx: u32 = 0; x_idx < dim_x; ++x_idx; {
                 local linear_idx: u32 = (z_idx * yx_plane_size) + (y_idx * dim_x) + x_idx;
-                local val: u32 = cube[linear_idx](u32);
-                print("Cube[%ld,%ld,%ld] = %ld\n" castptr ptr, z_idx, y_idx, x_idx, val);
+                local val: u32 = deref cube[linear_idx];
+                print("Cube[%ld,%ld,%ld] = %ld\n" as ptr, z_idx, y_idx, x_idx, val);
             }
         }
     }
@@ -207,8 +207,8 @@ fn main() {
         for local y_idx_final: u32 = 0; y_idx_final < dim_y; ++y_idx_final; {
             for local x_idx_final: u32 = 0; x_idx_final < dim_x; ++x_idx_final; {
                 local linear_idx_final: u32 = (z_idx_final * yx_plane_size) + (y_idx_final * dim_x) + x_idx_final;
-                local val_final: u32 = cube[linear_idx_final](u32);
-                print("Cube[%ld,%ld,%ld] = %ld\n" castptr ptr, z_idx_final, y_idx_final, x_idx_final, val_final);
+                local val_final: u32 = deref cube[linear_idx_final];
+                print("Cube[%ld,%ld,%ld] = %ld\n" as ptr, z_idx_final, y_idx_final, x_idx_final, val_final);
             }
         }
     }
