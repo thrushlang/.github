@@ -132,6 +132,18 @@ thrushc -build-dir="build" -llvm -clang fibonacci.th -start -o fibonacci.exe -en
 thorium run
 ```
 
+### Code Example - Hello World
+
+```rust
+fn print(fmt: ptr) s32 @public @ignore @extern("printf");
+
+fn main() {
+
+  print("%s" as ptr, "Hello World!" as ptr);
+
+}
+```
+
 ### Code Example - 3D Matrix
 
 ```rust
