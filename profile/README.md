@@ -139,7 +139,10 @@ fn print(fmt: ptr) s32 @public @ignore @extern("printf");
 
 fn main() {
 
-   print("%s" as ptr, "Hello World!" as ptr);
+    local fmt: str = "%s";
+    local hello_world: str = "Hello World!";
+
+    print(fmt as ptr, hello_world as ptr);
 
 }
 ```
