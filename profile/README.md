@@ -174,7 +174,7 @@ fn print(fmt: ptr) s32 @public @ignore @extern("printf");
 fn main() {
     // 2x2x2 u32 matrix (simulated with an 8-element array)
     // [z][y][x]
-    local mut cube: array[u32; 8] = [
+    local mut cube: array[u32; 8] = fixed[
         10, 11, 12, 13,
         14, 15, 16, 17
     ];
