@@ -178,6 +178,9 @@ fn main() {
         10, 11, 12, 13,
         14, 15, 16, 17
     ];
+
+    local cube_fmt: str = "Cube[%ld,%ld,%ld] = %ld\n";
+    local cube_modified_fmt: str = "Modified Cube[%ld,%ld,%ld] to %ld\n";
     
     local dim_z: u32 = 2;
     local dim_y: u32 = 2;
@@ -192,7 +195,7 @@ fn main() {
             for local mut x_idx: u32 = 0; x_idx < dim_x; ++x_idx; {
                 local linear_idx: u32 = (z_idx * yx_plane_size) + (y_idx * dim_x) + x_idx;
                 local val: u32 = deref cube[linear_idx];
-                print("Cube[%ld,%ld,%ld] = %ld\n" as ptr, z_idx, y_idx, x_idx, val);
+                print(cube_fmt as ptr, z_idx, y_idx, x_idx, val);
             }
         }
     }
@@ -215,7 +218,7 @@ fn main() {
     
     cube[target_linear_idx] = new_val; // Assignment with dynamic index
     
-    print("Modified Cube[%ld,%ld,%ld] to %ld\n" as ptr, target_z, target_y, target_x, new_val);
+    print(cube_modified_fmt as ptr, target_z, target_y, target_x, new_val);
     
     // Phase 3: Print again to verify
     for local mut z_idx_final: u32 = 0; z_idx_final < dim_z; ++z_idx_final; {
@@ -223,7 +226,7 @@ fn main() {
             for local mut x_idx_final: u32 = 0; x_idx_final < dim_x; ++x_idx_final; {
                 local linear_idx_final: u32 = (z_idx_final * yx_plane_size) + (y_idx_final * dim_x) + x_idx_final;
                 local val_final: u32 = deref cube[linear_idx_final];
-                print("Cube[%ld,%ld,%ld] = %ld\n" as ptr, z_idx_final, y_idx_final, x_idx_final, val_final);
+                print(cube_fmt as ptr, z_idx_final, y_idx_final, x_idx_final, val_final);
             }
         }
     }
