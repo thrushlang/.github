@@ -4,7 +4,7 @@
 
 <h1 align="center">Thrush Programming Language</h1>
 
-The **Thrush Programming Language**. A system programming language that revolutionizes low-level control, intuitive abstraction for beginners, and limitless IR low-level control for experts.
+The **Thrush Programming Language**. A system's programming language that revolutionizes low-level control, intuitive abstraction for beginners, and limitless IR low-level control for experts.
 
 ## Inspiration
 
