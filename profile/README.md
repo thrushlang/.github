@@ -106,12 +106,10 @@ fn main() {
 
 The documentation isn't ready yet, as the language is still in deep development. You can see the speculative syntax at https://github.com/thrushlang/syntax.
 
-## Example - Fibonacci sequence 
-
-### Compiler
-
 > [!NOTE]  
 > This programming language doesn't rely on Clang or GCC to compile without linking; it simply uses them as a gateway to the closest native linker on the system. This is because creating a driver for a specific linker is a very complex task. Many programming languages ​​didn't even have one decades after their development. And this is the reason for the `-clang`, or `-gcc` flag.
+
+### Compiler
 
 #### Linux
 
