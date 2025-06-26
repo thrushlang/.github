@@ -129,7 +129,7 @@ thrushc -build-dir="build" -llvm -clang fibonacci.th -start -o fibonacci.exe -en
 .\fibonacci.exe
 ```
 
-### Package Manager
+### Package Manager (Not finished yet)
 
 ```console
 thorium run
