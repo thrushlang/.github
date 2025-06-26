@@ -83,11 +83,11 @@ fn main() {
 
 - Direct Code Generation Control: Manipulate intermediate representations (IR) and low-level instructions for precise, architecture-specific optimizations.
 - Powerful Sublanguage Integration: Seamlessly interoperate with LLVM and assembler, enabling fine-grained control over code generation.
-- Robust Static Typing: Enforce type safety with a strongly statically typed system for reliable, high-performance code.
+- Robust Static Typing: Enforce type safety with a strongly statically typed system for reliable, high-performance code with powerful recursive bounds type checking.
 - Flexible Unsafe Environment: Harness a complex, unsafe low-level system for maximum control in bare-metal and embedded development.
 - C Interoperability: Integrate effortlessly with C codebases, leveraging existing libraries and systems.
 - Unified, Lightweight Compiler: A robust, all-in-one compiler designed for simplicity and ease of use.
-- Minimal Runtime Overhead
+- Minimal Runtime Overhead (C compiler code generation-like)
 
 ## Goals
 
@@ -109,6 +109,9 @@ The documentation isn't ready yet, as the language is still in deep development.
 ## Example - Fibonacci sequence 
 
 ### Compiler
+
+> [!NOTE]  
+> This programming language doesn't rely on Clang or GCC to compile without linking; it simply uses them as a gateway to the closest native linker on the system. This is because creating a driver for a specific linker is a very complex task. Many programming languages ​​didn't even have one decades after their development. And this is the reason for the `-clang`, or `-gcc` flag.
 
 #### Linux
 
