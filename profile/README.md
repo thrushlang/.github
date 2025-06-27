@@ -21,9 +21,9 @@ Systems languages like ``C``, ``C++``, and ``Rust`` have yet to fully explore lo
 
 Thrush empowers developers by enabling IR manipulation through language-integrated Low-Level Instructions (LLI), a high-level, streamlined interface for GCC and LLVM intrinsic instructions, while prioritizing beginners with a future memory-safe abstraction layer built atop its powerful, low-level system.
 
-## Why Thrush over C, C++ or Rust?
+## Why Thrush?
 
-Thrush holds immense promise for bare-metal and embedded systems development through its innovative low-level instructional concepts, particularly its language-integrated Low-Level Instructions (LLI) for seamless IR manipulation with GCC and LLVM intrinsics. While prioritizing simplicity, Thrush will layer a memory-safe abstraction atop its powerful low-level system, making it beginner-friendly. Depending on your needs, you might still choose C, C++, or Rust, but Thrush offers a unique blend of control and accessibility.
+Thrush is a very promising tool for bare-metal and embedded system development thanks to its innovative low-level instruction concepts, particularly its built-in Low-Level Instructions (LLI) for seamless IR manipulation using GCC and LLVM intrinsics. Prioritizing simplicity, Thrush incorporates a memory-safe abstraction over its powerful low-level system, making it ideal for beginners. Depending on your needs, you could opt for C, C++, or Rust, but Thrush offers a unique combination of control and accessibility while the language matures into a final form.
 
 ### Low Level Control
 
