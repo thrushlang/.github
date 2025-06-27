@@ -67,7 +67,7 @@ fn main() {
 - Thrush enables seamless compile-time code execution, empowering developers to perform computations and optimizations directly during compilation with a simple, intuitive syntax.
 
 ```rust
-fn comptime_sum(a: u8, a: u8) u16 @compiletime {
+fn comptime_sum(a: u8, b: u8) u16 @compiletime {
   // Non-explicit cast is allowed.
   return a + b;
 }
