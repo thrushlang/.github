@@ -39,11 +39,13 @@ compile @target("armv7e-m") @output("example.s") @asm {
 - Thrush enables seamless integration of low-level instructions alongside their high-level counterparts, allowing developers to fluidly switch between abstraction levels within the same codebase.
 
 ```rust
-fn main() {
+fn main() u32 {
     local number: u8 = 0;
 
     // Low-level instruction for direct memory access.
     instr loaded_value: u8 = load u8, number;
+
+    return 0;
 }
 ```
 
@@ -59,8 +61,11 @@ asmfn invoke_exit_syscall() void {
     "~{rax}~{rdi}"
 }
 
-fn main() {
+fn main() u32 {
+
   invoke_exit_syscall();
+
+  return 0;
 }
 ```
 
@@ -72,8 +77,12 @@ fn comptime_sum(a: u8, b: u8) u16 @compiletime {
   return a + b;
 }
 
-fn main() {
+fn main() u32 {
+
    comptime_sum(15, 15);
+
+   return 0;
+
 }
 ```
 
@@ -140,12 +149,14 @@ thorium run
 ```rust
 fn print(fmt: ptr) s32 @public @ignore @extern("printf");
 
-fn main() {
+fn main() u32 {
 
     local fmt: str = "%s";
     local hello_world: str = "Hello World!";
 
     print(fmt as ptr, hello_world as ptr);
+
+    return 0;
 
 }
 ```
@@ -174,7 +185,7 @@ fn main() {
 
 fn print(fmt: ptr) s32 @public @ignore @extern("printf");
 
-fn main() {
+fn main() u32 {
     // 2x2x2 u32 matrix (simulated with an 8-element array)
     // [z][y][x]
     local mut cube: array[u32; 8] = fixed[
@@ -255,6 +266,8 @@ fn main() {
       - Cube[1,1,0] = 16
       - Cube[1,1,1] = 17
     */
+
+    return 0;
 }
 ```
 
