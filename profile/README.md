@@ -41,12 +41,12 @@ compile @target("armv7e-m") @output("example.s") @asm {
 ```rust
 fn main() u32 {
 
-   local number: u8 = 0;
+    local number: u8 = 0;
 
-   // Low-level instruction for direct memory access.
-   instr loaded_value: u8 = load u8, number;
+    // Low-level instruction for direct memory access.
+    instr loaded_value: u8 = load u8, number;
 
-   return 0;
+    return 0;
 
 }
 ```
@@ -64,8 +64,8 @@ asmfn invoke_exit_syscall() void {
 }
 
 fn main() u32 {
-   invoke_exit_syscall();
-   return 0;
+    invoke_exit_syscall();
+    return 0;
 }
 ```
 
@@ -73,13 +73,13 @@ fn main() u32 {
 
 ```rust
 fn comptime_sum(a: u8, b: u8) u16 @compiletime {
-  // Non-explicit cast is allowed.
-   return a + b;
+    // Non-explicit cast is allowed.
+    return a + b;
 }
 
 fn main() u32 {
-   comptime_sum(15, 15);
-   return 0;
+    comptime_sum(15, 15);
+    return 0;
 }
 ```
 
@@ -148,12 +148,12 @@ fn print(fmt: ptr) s32 @public @ignore @extern("printf");
 
 fn main() u32 {
 
-   local fmt: str = "%s";
-   local hello_world: str = "Hello World!";
+    local fmt: str = "%s";
+    local hello_world: str = "Hello World!";
 
-   print(fmt as ptr, hello_world as ptr);
+    print(fmt as ptr, hello_world as ptr);
 
-   return 0;
+    return 0;
 
 }
 ```
