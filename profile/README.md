@@ -4,7 +4,7 @@
 
 <h1 align="center">Thrush Programming Language</h1>
 
-The **Thrush Programming Language**. A system's programming language that revolutionizes low-level control. 
+The **Thrush Programming Language**. A system's programming language that provides complete low-level control. 
 
 ## Inspiration
 
@@ -23,7 +23,7 @@ Thrush empowers developers by enabling IR manipulation through language-integrat
 
 ## Why Thrush?
 
-Thrush is a very promising tool for bare-metal and embedded system development thanks to its innovative low-level instruction concepts, particularly its built-in Low-Level Instructions (LLI) for seamless IR manipulation using GCC and LLVM intrinsics. Prioritizing simplicity, Thrush incorporates a memory-safe abstraction over its powerful low-level system, making it ideal for beginners. Depending on your needs, you could opt for C, C++, or Rust, but Thrush offers a unique combination of control and accessibility while the language matures into a final form.
+Thrush is a very promising tool for bare-metal and embedded system development thanks to its innovative low-level instruction concepts, particularly its integrated Low-Level Instructions (LLI) for fluent IR manipulation using GCC and LLVM intrinsics. This prioritizes and encourages learning intermediate code, rather than assembler code, unlocking architecture-specific optimizations and low-level type manipulation. Thrush offers low-level control over systems languages ​​like C, Rust, and C++ due to its manipulation of low-level instructions for optimizations beyond the standard ones. Thrush strives to inherit the type systems of highly typed languages, promoting reliable and robust software.
 
 ### Low Level Control
 
@@ -65,6 +65,7 @@ asmfn invoke_exit_syscall() void {
 
 fn main() u32 {
     invoke_exit_syscall();
+
     return 0;
 }
 ```
@@ -79,6 +80,7 @@ fn comptime_sum(a: u8, b: u8) u16 @compiletime {
 
 fn main() u32 {
     comptime_sum(15, 15);
+
     return 0;
 }
 ```
@@ -87,13 +89,12 @@ fn main() u32 {
 
 ## Features
 
-- Direct Code Generation Control: Manipulate intermediate representations (IR) and low-level instructions for precise, architecture-specific optimizations.
-- Powerful Sublanguage Integration: Seamlessly interoperate with LLVM and assembler, enabling fine-grained control over code generation.
-- Robust Static Typing: Enforce type safety with a strongly statically typed system for reliable, high-performance code with powerful recursive bounds type checking.
-- Flexible Unsafe Environment: Harness a complex, unsafe low-level system for maximum control in bare-metal and embedded development.
-- C Interoperability: Integrate effortlessly with C codebases, leveraging existing libraries and systems.
-- Unified, Lightweight Compiler: A robust, all-in-one compiler designed for simplicity and ease of use.
-- Minimal Runtime Overhead (C compiler code generation-like)
+- Code Generation Control.
+- Robust Static Type Checking.
+- Flexible Unsafe Environment.
+- C Simplicity.
+- C Interoperability.
+- Native Assembler Interoperability.
 
 ## Goals
 
@@ -163,6 +164,6 @@ fn main() u32 {
 We're looking for contributors for our project! If you're a Spanish speaker and would like to contribute, contact us through our official social media channels.
 Already know Rust but not LLVM? Don't worry! We're happy to teach you.
 
-## Social Media
+## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=DJaVs4kM9U)](https://discord.gg/DJaVs4kM9U)
