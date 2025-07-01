@@ -13,13 +13,7 @@ The **Thrush Programming Language**. A system's programming language that provid
 
 ## Philosophy
 
-### The problem
-
-Systems languages like ``C``, ``C++``, and ``Rust`` have yet to fully explore low-level programming potential, particularly in explicit manipulation of intermediate representations (IRs). Direct IR control empowers developers with seamless, high-level orchestration of assembly-like operations from source code, eliminating the need to resort to raw assembly.
-
-### The Thrush solution 
-
-Thrush empowers developers by enabling IR manipulation through language-integrated Low-Level Instructions (LLI), a high-level, streamlined interface for GCC and LLVM intrinsic instructions, while prioritizing beginners with a future memory-safe abstraction layer built atop its powerful, low-level system.
+Thrush empowers developers to create software with complete low-level control. This approach enhances robustness, optimizes performance, and simplifies code development for diverse, even exotic, architectures, directly addressing limitations found in many current systems programming languages.
 
 ## Why Thrush?
 
@@ -30,8 +24,8 @@ Thrush is a very promising tool for bare-metal and embedded system development t
 - Thrush empowers developers to compile low-level instructions directly to a specified target from source code, enabling precise, architecture-specific optimization with unparalleled ease.
 
 ```rust
-compile @target("armv7e-m") @output("example.s") @asm {
-  instr allocated_u8: ptr[u8] = alloc stack!, { u8, @align(4) };
+compile @target("armv7e-m") @asm @entrypoint @output("example.s") {
+  instr allocated_u8: ptr[u8] = alloc @stack, { u8 };
   write allocated_u8, u8 8;
 };
 ```
