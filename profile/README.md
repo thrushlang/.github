@@ -118,16 +118,16 @@ The documentation isn't ready yet, as the language is still in deep development.
 
 ```console
 mkdir build
-thrushc -build-dir="build" -llvm -clang fibonacci.th -start -o fibonacci -end
-./fibonacci
+thrushc -build-dir="build" -llvm -clang hello.thrush -start -o hello -end
+./hello
 ```
 
 #### Windows
 
 ```console
 mkdir build
-thrushc -build-dir="build" -llvm -clang fibonacci.th -start -o fibonacci.exe -end
-.\fibonacci.exe
+thrushc -build-dir="build" -llvm -clang hello.thrush -start -o hello.exe -end
+.\hello.exe
 ```
 
 ### Package Manager - (Not finished yet)
