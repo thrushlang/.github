@@ -155,7 +155,7 @@ fn main() u32 {
 We're looking for contributors for our project! If you're a Spanish speaker and would like to contribute, contact us through our official social media channels.
 Already know Rust but not LLVM? Don't worry! We're happy to teach you.
 
-### Current contributions required
+### Contributions required
 
 #### Documentation
 
