@@ -155,6 +155,18 @@ fn main() u32 {
 We're looking for contributors for our project! If you're a Spanish speaker and would like to contribute, contact us through our official social media channels.
 Already know Rust but not LLVM? Don't worry! We're happy to teach you.
 
+### Current contributions required
+
+#### Documentation
+
+- If you don't want to get involved with the compiler, you can choose to passively develop the language documentation or syntax repository.
+
+#### Ideas
+
+- If you don't want to get involved with the compiler, you can contribute future ideas to integrate into the language.
+
+Any kind of support is appreciated and will be taken into account.
+
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=DJaVs4kM9U)](https://discord.gg/DJaVs4kM9U)
