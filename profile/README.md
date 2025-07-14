@@ -18,7 +18,7 @@ Its name is Thrush, reminiscent of the **[thrush](https://en.wikipedia.org/wiki/
 
 #### Why this bird?
 
-The blackbird possesses one of the most complex, coordinated, and wonderful songs in the animal world, standing out in a specific area.
+The **[thrush](https://en.wikipedia.org/wiki/Thrush_(bird))** bird possesses one of the most complex, coordinated, and wonderful songs in the animal world, standing out in a specific area.
 
 As an analogy.
 
