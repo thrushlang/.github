@@ -16,6 +16,14 @@
 
 Its name is Thrush, reminiscent of the **[thrush](https://en.wikipedia.org/wiki/Thrush_(bird))** bird, a relative of the **Turdidae** family.<br>Its pronunciation differs from the bird's name; it's actually **T**.. **Rush**, not Thrush.
 
+#### Why this bird?
+
+The blackbird possesses one of the most complex, coordinated, and wonderful songs in the animal world, standing out in a specific area.
+
+As an analogy.
+
+Thrush is a very expressive and specific language for low-level programming, excelling in memory control, arithmetic operations, assembly, and much more at a low level. It offers a complex type layer to reduce possible runtime errors.
+
 ## Philosophy
 
 Thrush empowers developers to create software with complete low-level control. This approach enhances robustness, optimizes performance, and simplifies code development for diverse, even exotic, architectures, directly addressing limitations found in many current systems programming languages.
