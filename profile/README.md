@@ -4,7 +4,7 @@
 
 <h1 align="center">Thrush Programming Language</h1>
 
-The **Thrush Programming Language**. A system's programming language that provides complete low-level control. 
+<p align="center">The <b>Thrush Programming Language</b>. A system's programming language that provides complete low-level control.</p>
 
 ## Inspiration
 
@@ -14,7 +14,7 @@ The **Thrush Programming Language**. A system's programming language that provid
 
 ### Inspiration Name
 
-Its name is Thrush, reminiscent of the **[thrush](https://en.wikipedia.org/wiki/Thrush_(bird))** bird, a relative of the **Turdidae** family. Its pronunciation differs from the bird's name; it's actually **T**.. **Rush**, not Thrush.
+Its name is Thrush, reminiscent of the **[thrush](https://en.wikipedia.org/wiki/Thrush_(bird))** bird, a relative of the **Turdidae** family.<br>Its pronunciation differs from the bird's name; it's actually **T**.. **Rush**, not Thrush.
 
 ## Philosophy
 
