@@ -8,9 +8,13 @@ The **Thrush Programming Language**. A system's programming language that provid
 
 ## Inspiration
 
-- The language is largely based on the syntax of its source language, Rust.
-- The language is internally based on C.
-- Its name is Thrush, reminiscent of the **[thrush](https://en.wikipedia.org/wiki/Thrush_(bird))** bird, a relative of the **Turdidae** family. Its pronunciation differs from the bird's name; it's actually T.. Rush, not Thrush.
+- The syntax of the programming language is mainly inspired by the father of the promodial compiler, Rust. However, it does not inherit its functions and innovations up to this point.
+- This language is based on its lowest expression in C.
+- Inspired by the low-level capabilities of C.
+
+### Inspiration Name
+
+Its name is Thrush, reminiscent of the **[thrush](https://en.wikipedia.org/wiki/Thrush_(bird))** bird, a relative of the **Turdidae** family. Its pronunciation differs from the bird's name; it's actually **T**.. **Rush**, not Thrush.
 
 ## Philosophy
 
