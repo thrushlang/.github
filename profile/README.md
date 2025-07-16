@@ -72,7 +72,6 @@ asmfn invoke_exit_syscall() void {
 
 fn main() u32 {
     invoke_exit_syscall();
-
     return 0;
 }
 ```
@@ -87,7 +86,6 @@ fn comptime_sum(a: u8, b: u8) u16 @compiletime {
 
 fn main() u32 {
     comptime_sum(15, 15);
-
     return 0;
 }
 ```
