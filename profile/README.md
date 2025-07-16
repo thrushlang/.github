@@ -157,7 +157,6 @@ fn print(fmt: ptr) s32 @public @ignore @extern("printf");
 fn main() u32 {
 
     print("Hello World!" as ptr);
-
     return 0;
 
 }
