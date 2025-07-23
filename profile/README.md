@@ -8,7 +8,9 @@
 
 ## Inspiration
 
-- The syntax of the programming language is mainly inspired by the father of the promodial compiler, Rust. However, it does not inherit its functions and innovations up to this point.
+### Characteristics
+
+- Syntactically it is based on Rust.
 - This language is based on its lowest expression in C.
 - Inspired by the low-level capabilities of C.
 
