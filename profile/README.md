@@ -36,15 +36,6 @@ Thrush is a very promising tool for bare-metal and embedded system development t
 
 ### Low Level Control
 
-- Thrush empowers developers to compile low-level instructions directly to a specified target from source code, enabling precise, architecture-specific optimization with unparalleled ease.
-
-```rust
-compile @target("armv7e-m") @asm @entrypoint @output("example.s") {
-  instr allocated_u8: ptr[u8] = alloc @stack, { u8 };
-  write allocated_u8, u8 8;
-};
-```
-
 - Thrush enables seamless integration of low-level instructions alongside their high-level counterparts, allowing developers to fluidly switch between abstraction levels within the same codebase.
 
 ```rust
