@@ -96,6 +96,7 @@ fn main() u32 {
 
 ## Future Features
 
+- Automatically generated types for C headers (**CBindgen**).
 - Quantum code generation, through QIR and CIR.
 - Support for quantum behavior emulation with embedded XQCOR, or a bytecode runner.
 
@@ -178,5 +179,6 @@ Any kind of support is appreciated and will be taken into account.
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
