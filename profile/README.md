@@ -85,7 +85,7 @@ fn main() u32 {
 
 - And many more unique features when the language base is finished! ~ Kevin Benavides
 
-## Features
+## Current Features
 
 - Code Generation Control.
 - Robust Static Type Checking.
@@ -93,6 +93,11 @@ fn main() u32 {
 - C Simplicity.
 - C Interoperability.
 - Native Assembler Interoperability.
+
+## Future Features
+
+- Quantum code generation, through QIR and CIR.
+- Support for quantum behavior emulation with embedded XQCOR, or a bytecode runner.
 
 ## Goals
 
@@ -173,4 +178,5 @@ Any kind of support is appreciated and will be taken into account.
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
