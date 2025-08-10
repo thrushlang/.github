@@ -150,6 +150,8 @@ thorium run
 ### Code Example - Hello World
 
 ```rust
+// Please note that the file extensions are '.thrush' or '.th'.
+
 fn print(fmt: ptr) s32 @public @ignore @extern("printf");
 
 fn main() u32 {
@@ -180,6 +182,7 @@ Any kind of support is appreciated and will be taken into account.
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
