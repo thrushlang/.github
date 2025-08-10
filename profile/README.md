@@ -127,20 +127,18 @@ The documentation isn't ready yet, as the language is still in deep development.
 #### Linux
 
 ```console
-mkdir build
-thrushc -build-dir="build" -llvm -clang hello.thrush -start -o hello -end
-./hello
+mkdir build && ./thrushc -build-dir="build" -llvm -clang hello.thrush -start -o hello -end && ./hello
 ```
 
 #### Windows
 
 ```console
-mkdir build
-thrushc -build-dir="build" -llvm -clang hello.thrush -start -o hello.exe -end
-.\hello.exe
+mkdir build && .\thrushc.exe -build-dir="build" -llvm -clang hello.thrush -start -o hello.exe -end && .\hello.exe
 ```
 
 ### Package Manager - (Not finished yet)
+
+In the future, a package manager will exist that functions precisely like Rust. Once it is installed in the system path at the project's root, wherever the **Project.toml** file is located, it will automate the program's build process.
 
 ```console
 thorium run
@@ -179,6 +177,7 @@ Any kind of support is appreciated and will be taken into account.
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
