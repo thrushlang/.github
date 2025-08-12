@@ -160,6 +160,8 @@ fn main() u32 {
 }
 ```
 
+A greater number of usage examples can be found in the compiler examples folder, which contains general usage information: [Examples](https://github.com/thrushlang/thrushc/blob/master/examples)
+
 ## Contribute
 
 We're looking for contributors for our project! If you're a Spanish speaker and would like to contribute, contact us through our official social media channels.
@@ -180,6 +182,7 @@ Any kind of support is appreciated and will be taken into account.
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
