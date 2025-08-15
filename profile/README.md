@@ -164,9 +164,12 @@ thorium run
 fn print(fmt: ptr) s32 @public @ignore @extern("printf");
 
 // Computes the nth Fibonacci number recursively
+//
 // Parameters:
 //   n: The index of the Fibonacci number to compute (unsigned 32-bit integer)
+//
 // Returns: The nth Fibonacci number (unsigned 32-bit integer)
+//
 // Attributes:
 //   @hot: Marks the function as frequently executed, encouraging aggressive optimizations
 //         and placement in a .hot section for better cache locality. Useful for
@@ -177,13 +180,11 @@ fn print(fmt: ptr) s32 @public @ignore @extern("printf");
 //         with @minsize, and may be limited for deep recursion (e.g., n=25).
 //
 fn fibonacci(n: u32) u32 @hot @inline {
-
     if (n <= 1) {
         return n;
     }
 
     return fibonacci(n - 1) + fibonacci(n - 2);
-
 }
 
 // Prints the first n Fibonacci numbers
@@ -225,6 +226,7 @@ Any kind of support is appreciated and will be taken into account.
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
