@@ -132,13 +132,13 @@ The documentation isn't ready yet, as the language is still in deep development.
 #### Linux
 
 ```console
-mkdir build && ./thrushc -build-dir="build" -llvm -clang hello.thrush -start -o hello -end && ./hello
+mkdir build && ./thrushc -build-dir="build/" -llvm -clang -opt=mcqueen fibonacci.thrush -start -o fibonacci -end && ./fibonacci
 ```
 
 #### Windows
 
 ```console
-mkdir build && .\thrushc.exe -build-dir="build" -llvm -clang hello.thrush -start -o hello.exe -end && .\hello.exe
+mkdir build && .\thrushc.exe -build-dir="build/" -llvm -clang -opt=mcqueen fibonacci.thrush -start -o fibonacci.exe -end && .\fibonacci.exe
 ```
 
 ### Package Manager
@@ -225,6 +225,7 @@ Any kind of support is appreciated and will be taken into account.
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
