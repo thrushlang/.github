@@ -162,8 +162,8 @@ thorium run
 
 // Thrush Programming Language - File extensions
 // 
-// - .🐦
-// - .thrush
+// - '.🐦'
+// - '.thrush'
 //
 
 // External declaration for the C printf function
@@ -232,3 +232,4 @@ Any kind of support is appreciated and will be taken into account.
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
