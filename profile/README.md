@@ -149,16 +149,57 @@ In the future, there will be a package manager that works exactly like Rust **Ca
 thorium run
 ```
 
-### Code Example - Hello World
+### Code Example - Fibonacci
 
 ```rust
+// ******************************************************************************************
+//
+//   Fibonacci - O(2^n) Implementation
+//
+//   Copyright (c) 2025 Kevin Benavides
+//
+// ******************************************************************************************
+
+// External declaration for the C printf function
 fn print(fmt: ptr) s32 @public @ignore @extern("printf");
 
+// Computes the nth Fibonacci number recursively
+// Parameters:
+//   n: The index of the Fibonacci number to compute (unsigned 32-bit integer)
+// Returns: The nth Fibonacci number (unsigned 32-bit integer)
+// Attributes:
+//   @hot: Marks the function as frequently executed, encouraging aggressive optimizations
+//         and placement in a .hot section for better cache locality. Useful for
+//         performance-critical code, but may conflict with @minsize.
+//   @inline:
+//         Maps to LLVM's 'inlinehint', suggesting the compiler inline this function
+//         at call sites to reduce call overhead. May increase code size, conflicting
+//         with @minsize, and may be limited for deep recursion (e.g., n=25).
+//
+fn fibonacci(n: u32) u32 @hot @inline {
+
+    if (n <= 1) {
+        return n;
+    }
+
+    return fibonacci(n - 1) + fibonacci(n - 2);
+
+}
+
+// Prints the first n Fibonacci numbers
+// Parameters:
+//   n: The number of Fibonacci numbers to print (unsigned 32-bit integer)
+fn printFibonacci(n: u32) void {
+    for local mut i: u32 = 0; i < n; ++i; {
+        print("%d\n", fibonacci(i));
+    }
+}
+
 fn main() u32 {
+    print("Fibonacci sequence: " as ptr);         
+    printFibonacci(25);            
 
-    print("Hello World!" as ptr);
     return 0;
-
 }
 ```
 
@@ -184,6 +225,7 @@ Any kind of support is appreciated and will be taken into account.
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
