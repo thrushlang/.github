@@ -104,6 +104,7 @@ fn main() u32 {
 
 - The Thrush Compiler has the ability to output pre-compiled object files ``.o`` for the architecture as well as assembler and its counterparts without going through the pass manager for optimization.
 - The Thrush Compiler is very lightweight ``20``MB, considering that it contains embedded Clang for Linux and Windows, to be used as a wrapper to the closest linker.
+- The Thrush compiler can now be used as a linker directly; it contains the LLVM Linker embedded in the executable, so you can invoke it directly without relying on external sources. The compiler can be used as a manual linker for ``Elf``, ``Coff``, ``Mach0``, and ``WASM`` formats.
 
 ## State
 
@@ -232,5 +233,6 @@ Any kind of support is appreciated and will be taken into account.
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
