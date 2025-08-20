@@ -187,7 +187,7 @@ fn print(fmt: ptr) s32 @public @ignore @extern("printf");
 //         with @minsize, and may be limited for deep recursion (e.g., n=25).
 //
 fn fibonacci(n: u32) u32 @hot @inline {
-    if (n <= 1) {
+    if n <= 1 {
         return n;
     }
 
@@ -233,6 +233,7 @@ Any kind of support is appreciated and will be taken into account.
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
