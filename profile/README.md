@@ -169,6 +169,34 @@ In the future, there will be a package manager that works exactly like Rust **Ca
 thorium run
 ```
 
+### Code Example - Hello World
+
+```rust
+// ******************************************************************************************
+//
+//   Hello World!
+//
+//   Copyright (c) 2025 Kevin Benavides
+//
+// ******************************************************************************************
+
+// Thrush Programming Language - File extensions
+// 
+// - '.🐦'
+// - '.thrush'
+//
+
+// External declaration for the C printf function
+fn print(fmt: ptr) s32 @public @ignore @extern("printf");
+
+fn main() u32 {
+
+    print("Hellow World!" as ptr);         
+    return 0;
+
+}
+```
+
 ### Code Example - Fibonacci
 
 ```rust
@@ -252,6 +280,7 @@ Any kind of support is appreciated and will be taken into account.
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
