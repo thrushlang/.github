@@ -191,7 +191,7 @@ fn print(fmt: ptr) s32 @public @ignore @extern("printf");
 
 fn main() u32 {
 
-    print("Hellow World!" as ptr);         
+    print("Hello World!" as ptr);         
     return 0;
 
 }
@@ -280,6 +280,7 @@ Any kind of support is appreciated and will be taken into account.
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
