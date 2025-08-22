@@ -142,6 +142,23 @@ mkdir build && ./thrushc -build-dir="build/" -llvm -clang -opt=mcqueen fibonacci
 mkdir build && .\thrushc.exe -build-dir="build/" -llvm -clang -opt=mcqueen fibonacci.thrush -start -o fibonacci.exe -end && .\fibonacci.exe
 ```
 
+### Linker
+
+The compiler can currently be used directly as a linker. It includes the LLVM Linker, already embedded in the executable, so it requires no external dependencies beyond a C runtime.
+
+In the future, we plan to create wrappers for other linkers to make the compiler completely independent.
+In addition, there will be a driver for each.
+
+The example is on Linux with ``.o`` already precompiled:
+
+```console
+mkdir build && ./thrushc -build-dir="build/" -llvm -llinker -llinker-flavor=elf --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o a.out /usr/bin/../l
+ib64/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib64/Scrt1.o /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib64/crti.o /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o -L
+/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1 -L/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu15.1.1/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/lib -L/usr/lib build/emit/obj/program.o -lg
+cc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/crtendS.o /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/../../..
+/../lib64/crtn.o
+```
+
 ### Package Manager
 
 In the future, there will be a package manager that works exactly like Rust **Cargo**. Once it is installed in the system path at the root of the project, wherever the **Project.toml** file is located, it will automate the program's build process.
@@ -233,6 +250,7 @@ Any kind of support is appreciated and will be taken into account.
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
