@@ -176,7 +176,7 @@ thorium run
 //
 //   Hello World!
 //
-//   Copyright (c) 2025 Kevin Benavides
+//   Copyright (c) 2025 Kevin Benavides C.
 //
 // ******************************************************************************************
 
@@ -280,6 +280,7 @@ Any kind of support is appreciated and will be taken into account.
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
