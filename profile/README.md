@@ -266,7 +266,7 @@ In fact, the programming language was originally intended for learning purposes 
 
 In fact, the plan is to offer a complete mapping to the entire LLVM-C API of the LLVM project available, to offer code generation as close to Clang as a C compiler. This also includes future mappings to other backends such as QIR and MLIR, for quantum and more specialized computing, respectively.
 
-The responsible team (practically a solo developer) considers it a side, not main, project. We focus on improving both ourselves and our projects in parallel.
+The responsible team (practically a *solo developer*) considers it a side, not main, project. We focus on improving both ourselves and our projects in parallel.
 
 ## Contribute
 
@@ -288,6 +288,7 @@ Any kind of support is appreciated and will be taken into account.
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
