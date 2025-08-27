@@ -260,6 +260,14 @@ fn main() u32 {
 
 General examples of programming language usage can be found: [Examples](https://github.com/thrushlang/thrushc/blob/master/examples)
 
+## Background
+
+In fact, the programming language was originally intended for learning purposes in the compiler field, for the "team" behind the project. However, this doesn't mean it will be __taken as seriously as possible__.
+
+In fact, the plan is to offer a complete mapping to the entire LLVM-C API of the LLVM project available, to offer code generation as close to Clang as a C compiler. This also includes future mappings to other backends such as QIR and MLIR, for quantum and more specialized computing, respectively.
+
+The responsible team (practically a solo developer) considers it a side, not main, project. We focus on improving both ourselves and our projects in parallel.
+
 ## Contribute
 
 We're looking for contributors for our project! If you're a Spanish speaker and would like to contribute, contact us through our official social media channels.
@@ -280,6 +288,7 @@ Any kind of support is appreciated and will be taken into account.
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
