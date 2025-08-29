@@ -284,7 +284,7 @@ Any kind of support is appreciated and will be taken into account.
 
 ## Support 👋​
 
-If you want to deeply support the development of the language, please consider donation to the creator with any contribution or join us in taking the programming language forward.
+If you'd like to deeply support the development of the language, please consider donating to the team with any contribution or join us in driving the development of this research programming language.
 
 <a href="https://paypal.me/DevCheck" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white" alt="Support via PayPal" style="display: inline-block;">
@@ -293,6 +293,7 @@ If you want to deeply support the development of the language, please consider d
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
