@@ -112,7 +112,7 @@ fn main() u32 {
 - The Thrush Package Manager ``thorium``: The package manager has already begun development but is not yet complete.
 
 > [!NOTE]  
-> If you want to accelerate the speed of language development, please consider **donating** to the creator or joining us and carrying out the language.
+> If you want to accelerate the speed of language development, please consider **[donating](https://paypal.me/DevCheck)** to the **[creator](https://paypal.me/DevCheck)** or joining us and carrying out the language.
 
 ## Documentation
 
@@ -288,6 +288,7 @@ Any kind of support is appreciated and will be taken into account.
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
