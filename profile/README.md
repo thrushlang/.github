@@ -111,9 +111,6 @@ fn main() u32 {
 - The Thrush Compiler ``thrushc``: The Thrush compiler is still under development. Currently, we are focusing on developing its complex low-level instruction layer, optimizations in code generation, and a Clang-like C-style generation around LLVM.
 - The Thrush Package Manager ``thorium``: The package manager has already begun development but is not yet complete.
 
-> [!NOTE]  
-> If you want to accelerate the speed of language development, please consider **[donating](https://paypal.me/DevCheck)** to the **[creator](https://paypal.me/DevCheck)** or joining us and carrying out the language.
-
 ## Documentation
 
 The documentation isn't ready yet, as the language is still in deep development. You can see the speculative syntax at https://github.com/thrushlang/syntax.
@@ -285,9 +282,16 @@ Already know Rust but not LLVM? Don't worry! We're happy to teach you.
 
 Any kind of support is appreciated and will be taken into account.
 
+## Support
+
+If you want to deeply support the development of the language, please consider donation to the creator with any contribution or join us in taking the programming language forward.
+
+<img src="https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white" href="https://paypal.me/DevCheck"></img>
+
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
