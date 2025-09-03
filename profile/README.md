@@ -83,7 +83,7 @@ fn main() u32 {
 }
 ```
 
-- And many more unique features when the language base is finished! ~ Kevin Benavides
+- And many more unique features when the language base is finished! 
 
 ## Current Features
 
@@ -293,6 +293,7 @@ If you'd like to deeply support the development of the language, please consider
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
