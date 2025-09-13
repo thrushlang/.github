@@ -281,7 +281,7 @@ Already know Rust but not LLVM? Don't worry! We're happy to teach you.
 
 Any kind of support is appreciated and will be taken into account.
 
-## Support 👋​
+## Support 
 
 If you'd like to deeply support the development of the language, please consider donating to the team with any contribution or join us in driving the development of this research programming language.
 
@@ -292,6 +292,7 @@ If you'd like to deeply support the development of the language, please consider
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
