@@ -4,7 +4,7 @@
 
 <h1 align="center">Thrush Programming Language</h1>
 
-<p align="center">The <b>Thrush Programming Language</b>. A modern low-level systems programming language that provides a new low-level development approach.</p>
+<p align="center">The <b>Thrush Programming Language</b>. A general-purpose systems programming language that provides a new low-level development approach.</p>
 
 ## Inspiration
 
@@ -292,6 +292,7 @@ If you'd like to deeply support the development of the language, please consider
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
