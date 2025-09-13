@@ -11,7 +11,6 @@
 ### Characteristics
 
 - Syntactically it is based on Rust.
-- This language is based on its lowest expression in C.
 - Inspired by the low-level capabilities of C.
 
 ### Inspiration Name
@@ -293,6 +292,7 @@ If you'd like to deeply support the development of the language, please consider
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
