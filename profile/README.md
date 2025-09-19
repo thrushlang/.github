@@ -6,9 +6,7 @@
 
 <p align="center">The <b>Thrush Programming Language</b>. A general-purpose systems programming language that provides a new low-level development approach.</p>
 
-## Inspiration
-
-### Characteristics
+## Characteristics
 
 - Syntactically it is based on Rust.
 - Inspired by the low-level capabilities of C.
@@ -290,6 +288,7 @@ If you'd like to deeply support the development of the language, please consider
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
