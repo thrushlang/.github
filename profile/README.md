@@ -263,7 +263,7 @@ The responsible team (practically a *solo developer*) considers it a side, not m
 ## Contribute
 
 We're looking for contributors for our project! If you're a Spanish speaker and would like to contribute, contact us through our official social media channels.
-Already know Rust but not LLVM? Don't worry! We're happy to teach you.
+Already know **[Rust](https://www.rust-lang.org/)** but not **[LLVM](https://llvm.org/)**? Don't worry! We're happy to teach you.
 
 ### Contributions required
 
@@ -288,6 +288,7 @@ If you'd like to deeply support the development of the language, please consider
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
