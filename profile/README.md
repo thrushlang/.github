@@ -33,7 +33,7 @@ Thrush is a very promising tool for bare-metal and embedded system development t
 
 ### Low Level Control
 
-- Thrush enables seamless integration of low-level instructions alongside their high-level counterparts, allowing developers to fluidly switch between abstraction levels within the same codebase.
+- Thrush enables integration of low-level instructions along their high-level counterparts, allowing developers to fluidly switch between abstraction levels within the same codebase.
 
 ```rust
 fn main() u32 {
@@ -48,7 +48,7 @@ fn main() u32 {
 }
 ```
 
-- Thrush enables seamless embedding of linear assembler within the compilation process, offering direct, streamlined control over architecture-specific code generation.
+- Thrush enables embedding of linear assembler within the compilation process, offering direct control over architecture-specific code generation.
 
 ```rust
 
@@ -66,7 +66,7 @@ fn main() u32 {
 }
 ```
 
-- Thrush enables seamless compile-time code execution, empowering developers to perform computations and optimizations directly during compilation with a simple, intuitive syntax.
+- Thrush enables compile-time code execution, allowing developers to perform computations and optimizations directly during compilation with a simple, intuitive syntax.
 
 ```rust
 fn comptime_sum(a: u8, b: u8) u16 @compiletime {
@@ -288,6 +288,7 @@ If you'd like to deeply support the development of the language, please consider
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
