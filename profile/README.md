@@ -168,8 +168,6 @@ thorium run
 //
 //   Hello World!
 //
-//   Copyright (c) 2025 Kevin Benavides C.
-//
 // ******************************************************************************************
 
 // Thrush Programming Language - File extensions
@@ -194,9 +192,7 @@ fn main() u32 {
 ```rust
 // ******************************************************************************************
 //
-//   Fibonacci - O(2^n) Implementation
-//
-//   Copyright (c) 2025 Kevin Benavides
+//   Fibonacci - O(2^n)
 //
 // ******************************************************************************************
 
@@ -288,6 +284,7 @@ If you'd like to deeply support the development of the language, please consider
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
