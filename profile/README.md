@@ -84,7 +84,6 @@ fn main() u32 {
 
 - Code Generation Control.
 - Robust Static Type Checking.
-- Flexible Unsafe Environment.
 - C Simplicity.
 - C Interoperability.
 - Native Assembler Interoperability.
@@ -284,6 +283,7 @@ If you'd like to deeply support the development of the language, please consider
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
