@@ -220,7 +220,7 @@ fn print(fmt: ptr) s32 @public @ignore @extern("printf");
 //         at call sites to reduce call overhead. May increase code size, conflicting
 //         with @minsize, and may be limited for deep recursion (e.g., n=25).
 //
-fn fibonacci(n: u32) u32 @hot @inline {
+fn fibonacci(n: u32) u32 @hot @inline @nounwind {
     if n <= 1 {
         return n;
     }
@@ -283,6 +283,7 @@ If you'd like to deeply support the development of the language, please consider
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
