@@ -238,6 +238,7 @@ fn printFibonacci(n: u32) void {
 }
 
 fn main(argc: u32, argv: ptr[ptr[char]]) u32 {
+
     print("Fibonacci sequence: " as ptr);         
     printFibonacci(25);            
 
@@ -283,6 +284,7 @@ If you'd like to deeply support the development of the language, please consider
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
