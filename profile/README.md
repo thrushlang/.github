@@ -94,20 +94,14 @@ fn main() u32 {
 - Quantum code generation, through QIR and CIR.
 - Support for quantum behavior emulation with embedded QCOR, or a bytecode runner.
 
-## Goals
-
-- The Thrush Compiler has the ability to output pre-compiled object files ``.o`` for the architecture as well as assembler and its counterparts without going through the pass manager for optimization.
-- The Thrush Compiler is very lightweight ``20``MB, considering that it contains embedded Clang for Linux and Windows, to be used as a wrapper to the closest linker.
-- The Thrush compiler can now be used as a linker directly; it contains the LLVM Linker embedded in the executable, so you can invoke it directly without relying on external sources. The compiler can be used as a manual linker for ``Elf``, ``Coff``, ``Mach0``, and ``WASM`` formats.
-
 ## State
 
-- The Thrush Compiler ``thrushc``: The Thrush compiler is still under development. Currently, we are focusing on developing its complex low-level instruction layer, optimizations in code generation, and a Clang-like C-style generation around LLVM.
-- The Thrush Package Manager ``thorium``: The package manager has already begun development but is not yet complete.
+- The Thrush compiler ``thrushc``: The Thrush compiler is in a near-BETA phase (final bug hunts), and the first edition of the language will soon be available. Thorium won’t be ready, so a temporary installer will be created until Thorium’s development is complete or advanced enough for a beta. The documentation is on its way.
 
 ## Documentation
 
-The documentation isn't ready yet, as the language is still in deep development. You can see the speculative syntax at https://github.com/thrushlang/syntax.
+The documentation is on its way.
+New, dedicated documentation is on its way for the web; however, you can view the outdated version at: https://github.com/thrushlang/syntax
 
 ## Examples
 
@@ -284,6 +278,7 @@ If you'd like to deeply support the development of the language, please consider
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
