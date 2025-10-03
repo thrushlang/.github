@@ -185,12 +185,12 @@ fn main() u32 {
 ```rust
 // ******************************************************************************************
 //
-//   Fibonacci - O(2^n)
+//   Fibonacci - O(2^n)
 //
 // ******************************************************************************************
 
 // Thrush Programming Language - File extensions
-// 
+// 
 // - '.🐦'
 // - '.thrush'
 //
@@ -201,42 +201,46 @@ fn print(fmt: const ptr[array[char]]) s32 @public @ignore @extern("printf");
 // Computes the nth Fibonacci number recursively
 //
 // Parameters:
-//   n: The index of the Fibonacci number to compute (unsigned 32-bit integer)
+//   n: The index of the Fibonacci number to compute (unsigned 32-bit integer)
 //
 // Returns: The nth Fibonacci number (unsigned 32-bit integer)
 //
 // Attributes:
-//   @hot: Marks the function as frequently executed, encouraging aggressive optimizations
-//         and placement in a .hot section for better cache locality. Useful for
-//         performance-critical code, but may conflict with @minsize.
-//   @inline:
-//         Maps to LLVM's 'inlinehint', suggesting the compiler inline this function
-//         at call sites to reduce call overhead. May increase code size, conflicting
-//         with @minsize, and may be limited for deep recursion (e.g., n=25).
+//   @hot: Marks the function as frequently executed, encouraging aggressive optimizations
+//         and placement in a .hot section for better cache locality. Useful for
+//         performance-critical code.
+//   @inline:
+//         Maps to LLVM's 'inlinehint', suggesting the compiler inline this function
+//         at call sites to reduce call overhead. May increase code size, and may be
+//         limited for deep recursion (e.g., n=25).
+//   @nounwind:
+//         Maps to LLVM's 'nounwind', guaranteeing the function will not unwind the stack
+//         (i.e., it will not throw an exception or cause an abnormal termination
+//         that requires stack unwinding). This enables significant optimizations.
 //
 fn fibonacci(n: u32) u32 @hot @inline @nounwind {
-    if n <= 1 {
-        return n;
-    }
+    if n <= 1 {
+        return n;
+    }
 
-    return fibonacci(n - 1) + fibonacci(n - 2);
+    return fibonacci(n - 1) + fibonacci(n - 2);
 }
 
 // Prints the first n Fibonacci numbers
 // Parameters:
-//   n: The number of Fibonacci numbers to print (unsigned 32-bit integer)
+//   n: The number of Fibonacci numbers to print (unsigned 32-bit integer)
 fn printFibonacci(n: u32) void {
-    for local mut i: u32 = 0; i < n; ++i; {
-        print("%d\n", fibonacci(i));
-    }
+    for local mut i: u32 = 0; i < n; ++i; {
+        print("%d\n", fibonacci(i));
+    }
 }
 
-fn main(argc: u32, argv: ptr[ptr[char]]) u32 {
+fn main(argc: u32, argv: ptr[array[char]]) u32 {
 
-    print("Fibonacci sequence: ");         
-    printFibonacci(25);            
+    print("Fibonacci sequence: ");         
+    printFibonacci(25);            
 
-    return 0;
+    return 0;
 }
 ```
 
@@ -278,6 +282,7 @@ If you'd like to deeply support the development of the language, please consider
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
