@@ -69,13 +69,12 @@ fn main() u32 {
 - Thrush enables compile-time code execution, allowing developers to perform computations and optimizations directly during compilation with a simple, intuitive syntax.
 
 ```rust
-fn comptime_sum(a: u8, b: u8) u16 @compiletime {
-    // Non-explicit cast is allowed.
+fn compute_comptime_sum(a: u128, b: u128) u128 @compiletime {
     return a + b;
 }
 
 fn main() u32 {
-    comptime_sum(15, 15);
+    local sum: u128 = compute_comptime_sum(15, 15);
     return 0;
 }
 ```
@@ -207,8 +206,7 @@ fn print(fmt: const ptr[array[char]]) s32 @public @ignore @extern("printf");
 //
 // Attributes:
 //   @hot: Marks the function as frequently executed, encouraging aggressive optimizations
-//         and placement in a .hot section for better cache locality. Useful for
-//         performance-critical code.
+//         and placement in a .hot section for better cache locality. 
 //   @inline:
 //         Maps to LLVM's 'inlinehint', suggesting the compiler inline this function
 //         at call sites to reduce call overhead. May increase code size, and may be
@@ -282,6 +280,7 @@ If you'd like to deeply support the development of the language, please consider
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
