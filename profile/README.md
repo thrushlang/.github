@@ -169,7 +169,7 @@ thorium run
 //
 
 // External declaration for the C printf function
-fn print(fmt: const ptr[array[char]]) s32 @public @ignore @extern("printf");
+fn print(fmt: const ptr[array[char]]) s32 @public @ignore @extern("printf") @convention("C");
 
 fn main() u32 {
 
@@ -195,7 +195,7 @@ fn main() u32 {
 //
 
 // External declaration for the C printf function
-fn print(fmt: const ptr[array[char]]) s32 @public @ignore @extern("printf");
+fn print(fmt: const ptr[array[char]]) s32 @public @ignore @extern("printf") @convention("C");
 
 // Computes the nth Fibonacci number recursively
 //
@@ -280,6 +280,7 @@ If you'd like to deeply support the development of the language, please consider
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
