@@ -302,7 +302,7 @@ int main(int argc, char** argv) {
           a[i] = a[i] + j%u;              
         }
     
-      a[i] += r;                        
+        a[i] += r;                        
     }
  
     printf("%d\n", a[r]);              
@@ -371,6 +371,7 @@ If you'd like to deeply support the development of the language, please consider
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
