@@ -242,6 +242,95 @@ fn main(argc: u32, argv: ptr[array[char]]) u32 {
 }
 ```
 
+### Code Example - 100 Millions Array Updates
+
+```rust
+// ******************************************************************************************
+//
+//   100 MILLIONS ARRAY UPDATES 
+//
+// ******************************************************************************************
+
+fn atoi(str: array[char]) s32 @public @ignore @extern("atoi") @convention("C");
+fn srand(seed: u32) void @public @extern("srand") @convention("C");
+fn time(timer: ptr) u32 @public @extern("time") @convention("C"); 
+fn rand() s32 @public @extern("rand") @convention("C");
+fn print(fmt: const ptr[array[char]]) s32 @public @ignore @extern("printf") @convention("C");
+
+fn main(argc: s32, argv: ptr[array[char]]) u32 {
+
+    local mut u: s32 = atoi(defer argv[1]); 
+
+    srand(time(nullptr)); 
+  
+    local mut r: s32 = rand() % 10000; 
+    local mut a: array[s32; 10000]; 
+
+    for local mut i: s32 = 0; i < 10000; i++; {
+        for local mut j: s32 = 0; j < 100000; j++; {
+            a[i] = (defer a[i]) + ((j % u));             
+        }
+
+        a[i] = (defer a[i]) + r;
+    }
+
+    print("%ld\n", defer a[r]); 
+
+    return 0;
+
+}
+```
+
+```C
+#include "stdio.h"
+#include "stdlib.h"
+#include "stdint.h"
+#include "time.h"
+
+int main(int argc, char** argv) {
+
+    int u = atoi(argv[1]);             
+ 
+    srand(time(NULL));                 
+ 
+    int r = rand() % 10000;              
+ 
+    int32_t a[10000] = {0};            
+ 
+    for (int i = 0; i < 10000; i++) {    
+        for (int j = 0; j < 100000; j++) { 
+          a[i] = a[i] + j%u;              
+        }
+    
+      a[i] += r;                        
+    }
+ 
+    printf("%d\n", a[r]);              
+
+}
+```
+
+### Benchmark
+
+- Thrush: AVG `1.76s`
+- C: AVG `1.79s`
+
+Commands:
+
+#### Thrush
+
+```console
+thrushc -llvm-backend -build-dir="build/" -opt=mcqueen -clang loop.thrush -start -o loop -end && ./loop
+```
+
+#### C
+
+```console
+clang -O3 loop.c -o loop && ./loop
+```
+
+Obviously, if you have a little knowledge of CS, you know that this isn't the ideal way to test which programming language is faster, but anyway, it's just to point out that Thrush is a C equivalent.
+
 General examples of programming language usage can be found: [Examples](https://github.com/thrushlang/thrushc/blob/master/examples)
 
 ## Background
@@ -280,6 +369,7 @@ If you'd like to deeply support the development of the language, please consider
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
