@@ -329,7 +329,9 @@ thrushc -llvm-backend -build-dir="build/" -opt=mcqueen -clang loop.thrush -start
 clang -O3 loop.c -o loop && ./loop
 ```
 
-Obviously, if you have a little knowledge of CS, you know that this isn't the ideal way to test which programming language is faster, but anyway, it's just to point out that Thrush is a C equivalent.
+Obviously, if you have a little knowledge of CS, you know that this isn't the ideal way to test which programming language is faster, but anyway, it's just to point out that Thrush is trying to be a C equivalent.
+
+
 
 General examples of programming language usage can be found: [Examples](https://github.com/thrushlang/thrushc/blob/master/examples)
 
@@ -369,6 +371,7 @@ If you'd like to deeply support the development of the language, please consider
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
