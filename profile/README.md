@@ -320,13 +320,13 @@ Commands:
 #### Thrush
 
 ```console
-thrushc -llvm-backend -build-dir="build/" -opt=mcqueen -clang loop.thrush -start -o loop -end && ./loop
+thrushc -llvm-backend -build-dir="build/" -opt=mcqueen -clang loop.thrush -start -o loop -end && ./loop 1
 ```
 
 #### C
 
 ```console
-clang -O3 loop.c -o loop && ./loop
+clang -O3 loop.c -o loop && ./loop 1
 ```
 
 Obviously, if you have a little knowledge of CS, you know that this isn't the ideal way to test which programming language is faster, but anyway, it's just to point out that Thrush is trying to be a C equivalent.
