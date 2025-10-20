@@ -89,7 +89,7 @@ fn main() u32 {
 
 ## Future Features
 
-- Automatically generated types for C headers (**CBindgen**).
+- Automatically generated types for C headers (**CBindgen**) through the Clang frontend compiler.
 - Quantum code generation, through QIR and CIR.
 - Support for quantum behavior emulation with embedded QCOR, or a bytecode runner.
 
@@ -216,7 +216,12 @@ fn print(fmt: const ptr[array[char]]) s32 @public @ignore @extern("printf") @con
 //         (i.e., it will not throw an exception or cause an abnormal termination
 //         that requires stack unwinding). This enables significant optimizations.
 //
-fn fibonacci(n: u32) u32 @hot @inline @nounwind {
+fn fibonacci(n: u32) u32
+@hot
+@inline
+@nounwind
+{
+
     if n <= 1 {
         return n;
     }
@@ -331,8 +336,6 @@ clang -O3 loop.c -o loop && ./loop 1
 
 Obviously, if you have a little knowledge of CS, you know that this isn't the ideal way to test which programming language is faster, but anyway, it's just to point out that Thrush is trying to be a C equivalent.
 
-
-
 General examples of programming language usage can be found: [Examples](https://github.com/thrushlang/thrushc/blob/master/examples)
 
 ## Background
@@ -371,6 +374,7 @@ If you'd like to deeply support the development of the language, please consider
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
