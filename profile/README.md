@@ -221,7 +221,6 @@ fn fibonacci(n: u32) u32
 @inline
 @nounwind
 {
-
     if n <= 1 {
         return n;
     }
@@ -374,6 +373,7 @@ If you'd like to deeply support the development of the language, please consider
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
