@@ -316,7 +316,7 @@ Commands:
 #### Thrush
 
 ```console
-thrushc -llvm-backend -build-dir="build/" -opt=mcqueen -clang loop.thrush -start -o loop -end && ./loop 1
+thrushc -llvm-backend -build-dir="build/" -opt=mcqueen loop.thrush -clang-link -start -o loop -end && ./loop 1
 ```
 
 #### C
@@ -365,6 +365,7 @@ If you'd like to deeply support the development of the language, please consider
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
