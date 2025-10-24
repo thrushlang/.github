@@ -104,26 +104,18 @@ New, dedicated documentation is on its way for the web; however, you can view th
 
 ## Examples
 
-> [!NOTE]  
-> This programming language doesn't rely on Clang or GCC to compile without linking; it simply uses them as a gateway to the closest native linker on the system. This is because creating a driver for a specific linker is a very complex task. Many programming languages ​​didn't even have one decades after their development. And this is the reason for the `-clang`, or `-gcc` flag.
- 
-> [!NOTE]  
-> The ``-start`` and ``-end`` flags delimit the parameters to be passed to the currently active link compiler (e.g., Clang or GCC). This is a way to simplify flag processing and, above all, make it independent of the final link compiler.
-> 
-> It should be noted that in each distribution of the compiler, it will always include a compiled clang for the architecture for which the compiler was compiled so that in the first compilation it installs in `thrushlang/`. If the `-clang` flag is used and no path is specified, the compiler will use the integrated one it has for linking; the same goes for GCC.
-
 ### Compiler
 
 #### Linux
 
 ```console
-mkdir build && ./thrushc -build-dir="build/" -llvm-backend -clang -opt=mcqueen fibonacci.thrush -start -o fibonacci -end && ./fibonacci
+mkdir build && ./thrushc -build-dir="build/" -llvm-backend -opt=mcqueen fibonacci.thrush -clang-link -start -o fibonacci -end && ./fibonacci
 ```
 
 #### Windows
 
 ```console
-mkdir build && .\thrushc.exe -build-dir="build/" -llvm-backend -clang -opt=mcqueen fibonacci.thrush -start -o fibonacci.exe -end && .\fibonacci.exe
+mkdir build && .\thrushc.exe -build-dir="build/" -llvm-backend -opt=mcqueen fibonacci.thrush -clang-link -start -o fibonacci.exe -end && .\fibonacci.exe
 ```
 
 ### Linker
@@ -373,6 +365,7 @@ If you'd like to deeply support the development of the language, please consider
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
