@@ -337,7 +337,7 @@ The plan is to offer a full mapping to the entire LLVM-C API and to offer code g
 
 The responsible team (practically a *solo developer*) considers it a side, not main, project. We focus on improving both ourselves and our side projects in parallel.
 
-## Contribute
+## Support
 
 We're looking for contributors for our project! If you're a Spanish speaker and would like to contribute, contact us through our official social media channels.
 Already know **[Rust](https://www.rust-lang.org/)** but not **[LLVM](https://llvm.org/)**? Don't worry! We're happy to teach you.
@@ -353,15 +353,7 @@ Already know **[Rust](https://www.rust-lang.org/)** but not **[LLVM](https://llv
 - If you don't want to get involved with the compiler, you can contribute future ideas to integrate into the language.
 
 Any kind of support is appreciated and will be taken into account.
-
-## Support 
-
-If you'd like to deeply support the development of the language, please consider donating to the team with any contribution or join us in driving the development of this research programming language.
-
-<a href="https://paypal.me/DevCheck" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white" alt="Support via PayPal" style="display: inline-block;">
-</a>
-
+
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
