@@ -6,26 +6,10 @@
 
 <p align="center">The <b>Thrush Programming Language</b>. A general-purpose systems programming language that provides a new low-level development approach.</p>
 
-## Characteristics
+## General Characteristics
 
 - Syntactically it is based on Rust.
 - Inspired by the low-level capabilities of C.
-
-### Inspiration Name
-
-Its name is Thrush, reminiscent of the **[thrush](https://en.wikipedia.org/wiki/Thrush_(bird))** bird, a relative of the **Turdidae** family.<br>Its pronunciation differs from the bird's name; it's actually **T**.. **Rush**, not Thrush.
-
-#### Why this bird?
-
-The **[thrush](https://en.wikipedia.org/wiki/Thrush_(bird))** bird possesses one of the most complex, coordinated, and wonderful songs in the animal world, standing out in a specific area.
-
-This is an analogy.
-
-Thrush is a very expressive and specific language for low-level programming, excelling in memory control, arithmetic operations, assembly, and much more at a low level. It offers a complex type layer to reduce possible runtime errors.
-
-## Future Mission
-
-Thrush allows software developers to create software with complete low-level control. This approach enhances robustness, optimizes performance, and simplifies code development for diverse, even exotic, architectures, directly addressing limitations found in many current systems programming languages.
 
 ## Why Thrush?
 
@@ -353,10 +337,12 @@ Already know **[Rust](https://www.rust-lang.org/)** but not **[LLVM](https://llv
 - If you don't want to get involved with the compiler, you can contribute future ideas to integrate into the language.
 
 Any kind of support is appreciated and will be taken into account.
-
+
+
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
