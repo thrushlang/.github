@@ -26,6 +26,7 @@ fn main() u32 {
 
     // Low-level instruction for direct memory access.
     instr loaded_value: u8 = load u8, number;
+    write ref number, 0;
 
     return 0;
 
@@ -342,6 +343,7 @@ Any kind of support is appreciated and will be taken into account.
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
