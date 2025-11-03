@@ -231,7 +231,7 @@ fn main(argc: u32, argv: ptr[array[char]]) u32 {
 //
 // ******************************************************************************************
 
-fn atoi(str: array[char]) s32 @public @ignore @extern("atoi") @convention("C");
+fn atoi(str: const ptr[array[char]]) s32 @public @ignore @extern("atoi") @convention("C");
 fn srand(seed: u32) void @public @extern("srand") @convention("C");
 fn time(timer: ptr) u32 @public @extern("time") @convention("C"); 
 fn rand() s32 @public @extern("rand") @convention("C");
@@ -239,7 +239,7 @@ fn print(fmt: const ptr[array[char]]) s32 @public @ignore @extern("printf") @con
 
 fn main(argc: s32, argv: ptr[array[char]]) u32 {
 
-    local mut u: s32 = atoi(defer argv[1]); 
+    local mut u: s32 = atoi(defer (argv[1] as const ptr[array[char]])); 
 
     srand(time(nullptr)); 
   
@@ -342,6 +342,7 @@ Any kind of support is appreciated and will be taken into account.
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
