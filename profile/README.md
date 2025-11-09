@@ -44,7 +44,7 @@ asmfn invoke_exit_syscall() void {
     "~{rax}~{rdi}"
 }
 
-fn main() u32 {
+fn main() s32 {
     invoke_exit_syscall();
     return 0;
 }
@@ -57,7 +57,7 @@ fn compute_comptime_sum(a: u128, b: u128) u128 @compiletime {
     return a + b;
 }
 
-fn main() u32 {
+fn main() s32 {
     local sum: u128 = compute_comptime_sum(15, 15);
     return 0;
 }
@@ -147,7 +147,7 @@ thorium run
 // External declaration for the C printf function
 fn print(fmt: const ptr[array[char]]) s32 @public @ignore @extern("printf") @convention("C");
 
-fn main() u32 {
+fn main() s32 {
 
     print("Hello World!");         
     return 0;
@@ -213,7 +213,7 @@ fn printFibonacci(n: u32) void {
     }
 }
 
-fn main(argc: u32, argv: ptr[array[char]]) u32 {
+fn main(argc: u32, argv: ptr[array[char]]) s32 {
 
     print("Fibonacci sequence: ");         
     printFibonacci(25);            
@@ -237,7 +237,7 @@ fn time(timer: ptr) u32 @public @extern("time") @convention("C");
 fn rand() s32 @public @extern("rand") @convention("C");
 fn print(fmt: const ptr[array[char]]) s32 @public @ignore @extern("printf") @convention("C");
 
-fn main(argc: s32, argv: ptr[array[char]]) u32 {
+fn main(argc: s32, argv: ptr[array[char]]) s32 {
 
     local mut u: s32 = atoi(defer (argv[1] as const ptr[array[char]])); 
 
@@ -342,6 +342,7 @@ Any kind of support is appreciated and will be taken into account.
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
