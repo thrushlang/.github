@@ -181,12 +181,11 @@ fn print(fmt: const ptr[array[char]]) s32 @public @ignore @extern("printf") @con
 // Returns: The nth Fibonacci number (unsigned 32-bit integer)
 //
 // Attributes:
-//   @hot: Marks the function as frequently executed, encouraging aggressive optimizations
-//         and placement in a .hot section for better cache locality. 
+//   @hot: Marks the function as frequently executed, encouraging aggressive optimizations. 
 //   @inline:
 //         Maps to LLVM's 'inlinehint', suggesting the compiler inline this function
 //         at call sites to reduce call overhead. May increase code size, and may be
-//         limited for deep recursion (e.g., n=25).
+//         limited for deep recursion.
 //   @nounwind:
 //         Maps to LLVM's 'nounwind', guaranteeing the function will not unwind the stack
 //         (i.e., it will not throw an exception or cause an abnormal termination
@@ -342,6 +341,7 @@ Any kind of support is appreciated and will be taken into account.
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
