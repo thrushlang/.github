@@ -238,7 +238,7 @@ fn print(fmt: const ptr[array[char]]) s32 @public @ignore @extern("printf") @con
 
 fn main(argc: s32, argv: ptr[array[char]]) s32 @public {
 
-    local mut u: s32 = atoi(defer (argv[1] as const ptr[array[char]])); 
+    local mut u: s32 = atoi(deref (argv[1] as const ptr[array[char]])); 
 
     srand(time(nullptr)); 
   
@@ -247,13 +247,13 @@ fn main(argc: s32, argv: ptr[array[char]]) s32 @public {
 
     for local mut i: s32 = 0; i < 10000; i++; {
         for local mut j: s32 = 0; j < 100000; j++; {
-            a[i] = (defer a[i]) + ((j % u));             
+            a[i] = (deref a[i]) + ((j % u));             
         }
 
-        a[i] = (defer a[i]) + r;
+        a[i] = (deref a[i]) + r;
     }
 
-    print("%ld\n", defer a[r]); 
+    print("%ld\n", deref a[r]); 
 
     return 0;
 
@@ -339,64 +339,3 @@ Any kind of support is appreciated and will be taken into account.
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
