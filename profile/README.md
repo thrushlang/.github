@@ -119,8 +119,6 @@ cc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-need
 /../lib64/crtn.o
 ```
 
-The result is a valid executable, created without external dependencies in relation to the linker, since no external linker and only the Thrush compiler were used.
-
 ### Package Manager
 
 In the future, there will be a package manager that works exactly like Rust **Cargo**. Once it is installed in the system path at the root of the project, wherever the **Project.toml** file is located, it will automate the program's build process.
@@ -339,4 +337,5 @@ Any kind of support is appreciated and will be taken into account.
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
