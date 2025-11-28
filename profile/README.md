@@ -126,7 +126,7 @@ The result is a valid executable, created without external dependencies in relat
 In the future, there will be a package manager that works exactly like Rust **Cargo**. Once it is installed in the system path at the root of the project, wherever the **Project.toml** file is located, it will automate the program's build process.
 
 ```console
-thorium run
+torio run
 ```
 
 ### Code Example - Hello World
@@ -339,3 +339,4 @@ Any kind of support is appreciated and will be taken into account.
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
