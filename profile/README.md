@@ -13,7 +13,7 @@
 
 ## Why Thrush?
 
-Thrush is a very promising tool for bare-metal and embedded system development thanks to its innovative low-level instruction concepts, particularly its integrated Low-Level Instructions (LLI) for fluent IR manipulation using GCC and LLVM intrinsics. This prioritizes learning intermediate code, rather than assembler code, unlocking architecture-specific optimizations and low-level type manipulation. Thrush offers low-level control over systems languages ​​like C, Rust, and C++ due to its manipulation of low-level instructions for optimizations.
+Thrush is a very promising tool for bare-metal and embedded system development thanks to its innovative low-level instruction concepts, particularly its integrated Low-Level Instructions (LLI) for fluent IR manipulation using GCC and LLVM intrinsics. This prioritizes learning intermediate code, rather than inline assembler code, unlocking architecture-specific optimizations and low-level type manipulation. Thrush offers more low-level control over systems languages ​ due to its manipulation of low-level instructions for optimizations.
 
 ### Low Level Control
 
@@ -289,13 +289,13 @@ thrushc -llvm-backend -build-dir="build/" -opt=O3 loop.thrush -clang-link="clang
 clang -O3 loop.c -o loop && ./loop 1
 ```
 
-Obviously, if you have a little knowledge of CS, you know that this isn't the ideal way to test which programming language is faster, but anyway, it's just to point out that Thrush is trying to be a C equivalent.
+Obviously, if you have a little knowledge of CS, you know that this isn't the ideal way to test which programming language is faster, but anyway, it's just to point out that Thrush is trying to be a C equivalent in the speed field.
 
 General examples of programming language usage can be found: [Examples](https://github.com/thrushlang/thrushc/blob/master/examples)
 
 ## Background
 
-In fact, the programming language was originally intended for learning purposes in the compiler field, for the "team" behind the project. However, this doesn't mean it will be __taken as seriously as possible__.
+In fact, the programming language was originally intended for learning purposes in the compiler fields, for the "team" behind the project. However, this doesn't mean it will be __taken as seriously as possible__.
 
 The responsible team (practically a *solo developer*) considers it a side, not main, project. We focus on improving both ourselves and our side projects in parallel.
 
@@ -316,10 +316,10 @@ Already know **[Rust](https://www.rust-lang.org/)** but not **[LLVM](https://llv
 
 Any kind of support is appreciated and will be taken into account.
 
-
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
