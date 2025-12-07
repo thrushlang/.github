@@ -13,7 +13,11 @@
 
 ## Why Thrush?
 
-Thrush is a very promising tool for bare-metal and embedded system development thanks to its innovative low-level instruction concepts, particularly its integrated Low-Level Instructions (LLI) for fluent IR manipulation using GCC and LLVM intrinsics. This prioritizes learning intermediate code, rather than inline assembler code, unlocking architecture-specific optimizations and low-level type manipulation. Thrush offers more low-level control over systems languages ​ due to its manipulation of low-level instructions for optimizations.
+Thrush is a very promising tool for bare-metal and embedded system development thanks to its innovative low-level instruction concepts, particularly its integrated Low-Level Instructions (LLIs) for powerful IR manipulation using GCC and LLVM intrinsics. Thrush offers more granular control over system languages by manipulating low-level instructions for extreme manual optimizations that compiler backends cannot decipher.
+
+Thrush also focuses on portability and hardware access, providing full control over the generated machine code. 
+
+__**Nothing is hidden in Thrush.**__
 
 ### Low Level Control
 
@@ -319,6 +323,7 @@ Any kind of support is appreciated and will be taken into account.
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
