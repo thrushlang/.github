@@ -15,8 +15,6 @@
 
 Thrush is a very promising tool for bare-metal and embedded system development thanks to its innovative low-level instruction concepts, particularly its integrated Low-Level Instructions (LLIs) for powerful IR manipulation using GCC and LLVM intrinsics. Thrush offers more granular control over system languages by manipulating low-level instructions for extreme manual optimizations that compiler backends cannot decipher.
 
-__**Nothing is hidden in Thrush.**__
-
 ### Low Level Control
 
 - Thrush enables integration of low-level instructions along their high-level counterparts, allowing developers to fluidly switch between abstraction levels within the same codebase.
@@ -24,10 +22,14 @@ __**Nothing is hidden in Thrush.**__
 ```rust
 fn main() u32 {
 
-    local number: u8 = 0;
-
+    local a: u8 = 7;
+    local b: u8 = 15;
+    
     // Low-level instruction for direct memory access.
-    instr loaded_value: u8 = load u8, number;
+    lli write load u8, a, b;
+
+    // c = 7
+    local c: u8 = b;
 
     return 0;
 
@@ -76,7 +78,7 @@ fn main() s32 @public {
 ## Future Features
 
 - Automatically generated types for C headers (**CBindgen**) through the Clang frontend compiler.
-- Quantum code generation, through QIR and CIR.
+- Quantum code generation, through QIR.
 - Support for quantum behavior emulation with embedded QCOR, or a bytecode runner.
 
 ## State
@@ -321,6 +323,7 @@ Any kind of support is appreciated and will be taken into account.
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
