@@ -4,18 +4,16 @@
 
 <h1 align="center">Thrush Programming Language</h1>
 
-<p align="center">The <b>Thrush Programming Language</b>. A general-purpose systems programming language that provides a new low-level development approach.</p>
+<p align="center">The <b>Thrush Programming Language</b>. A general-purpose systems programming language for writing detailed, accurate, and fast code.</p>
 
 ## General Characteristics
 
 - Syntactically it is based on Rust.
-- Inspired by the low-level capabilities of C.
+- Is C based.
 
 ## Why Thrush?
 
 Thrush is a very promising tool for bare-metal and embedded system development thanks to its innovative low-level instruction concepts, particularly its integrated Low-Level Instructions (LLIs) for powerful IR manipulation using GCC and LLVM intrinsics. Thrush offers more granular control over system languages by manipulating low-level instructions for extreme manual optimizations that compiler backends cannot decipher.
-
-Thrush also focuses on portability and hardware access, providing full control over the generated machine code. 
 
 __**Nothing is hidden in Thrush.**__
 
@@ -323,6 +321,7 @@ Any kind of support is appreciated and will be taken into account.
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
