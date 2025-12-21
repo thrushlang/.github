@@ -97,13 +97,13 @@ New, dedicated documentation is on its way for the web; however, you can view th
 #### Linux
 
 ```console
-mkdir build && ./thrushc -opt=O3 fibonacci.thrush -start -o fibonacci -end && ./fibonacci
+./thrushc -opt=O3 fibonacci.thrush -start -o fibonacci -end && ./fibonacci
 ```
 
 #### Windows
 
 ```console
-mkdir build && .\thrushc.exe -opt=O3 fibonacci.thrush -start -o fibonacci.exe -end && .\fibonacci.exe
+.\thrushc.exe -opt=O3 fibonacci.thrush -start -o fibonacci.exe -end && .\fibonacci.exe
 ```
 
 ### Package Manager
@@ -323,6 +323,7 @@ Any kind of support is appreciated and will be taken into account.
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
