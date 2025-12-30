@@ -1,5 +1,5 @@
 <p align="center">
-  <img src= "https://github.com/thrushlang/.github/blob/main/assets/logos/thrushlang.png" alt= "logo" style= "width: 1hv; height: 1hv;"> </img>
+  <img src= "https://github.com/thrushlang/.github/blob/main/assets/logos/thrushlang-logo-name.png" alt= "logo" style= "width: 1hv; height: 1hv;"> </img>
 </p>
 
 <h1 align="center">Thrush Programming Language</h1>
@@ -323,6 +323,7 @@ Any kind of support is appreciated and will be taken into account.
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
