@@ -40,7 +40,9 @@ fn main() u32 {
 
 ```rust
 
-asmfn invoke_exit_syscall() void {
+asmfn invoke_x86_64_exit_syscall() void
+@asmsyntax("AT&T") @convention("C")
+{
     "mov $$60, %rax",
     "mov $$1, %rdi",
     "syscall"
@@ -49,20 +51,7 @@ asmfn invoke_exit_syscall() void {
 }
 
 fn main() s32 @public {
-    invoke_exit_syscall();
-    return 0;
-}
-```
-
-- Thrush enables compile-time code execution, allowing developers to perform computations and optimizations directly during compilation with a simple, intuitive syntax.
-
-```rust
-fn compute_comptime_sum(a: u128, b: u128) u128 @compiletime {
-    return a + b;
-}
-
-fn main() s32 @public {
-    local sum: u128 = compute_comptime_sum(15, 15);
+    invoke_x86_64_exit_syscall();
     return 0;
 }
 ```
@@ -323,6 +312,7 @@ Any kind of support is appreciated and will be taken into account.
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
