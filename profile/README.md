@@ -67,7 +67,7 @@ fn main() s32 @public {
 
 ## Future Features
 
-- Automatically generated types for C headers (**CBindgen**) through the Clang frontend compiler.
+- Automatically generated types for C headers (**CBindgen**) through the Clang frontend C & C++ compiler.
 - Quantum code generation, through QIR.
 - Support for quantum behavior emulation with embedded QCOR, or a bytecode runner.
 
@@ -269,6 +269,9 @@ int main(int argc, char** argv) {
 - Thrush: AVG `1.76s`
 - C: AVG `1.79s`
 
+> [!NOTE]  
+>  Actually, it can be a margin of error and is the same as C, although with `-jit` it even outperforms C, even though the Just-In-Time Compiler always has a heavy overhead at startup.
+
 Commands:
 
 #### Thrush
@@ -283,7 +286,8 @@ thrushc -opt=O3 loop.thrush -start -o loop -end && ./loop 1
 clang -O3 loop.c -o loop && ./loop 1
 ```
 
-Obviously, if you have a little knowledge of CS, you know that this isn't the ideal way to test which programming language is faster, but anyway, it's just to point out that Thrush is trying to be a C equivalent in the speed field.
+> [!NOTE]  
+>  Obviously, if you have a little knowledge of CS, you know that this isn't the ideal way to test which programming language is faster, but anyway, it's just to point out that Thrush is trying to be a C equivalent in the speed field.
 
 General examples of programming language usage can be found: [Examples](https://github.com/thrushlang/thrushc/blob/master/examples)
 
@@ -313,6 +317,7 @@ Any kind of support is appreciated and will be taken into account.
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
