@@ -58,7 +58,7 @@ fn main() s32 @public {
 
 ## Current Features
 
-- Full Ahead Of Time (AOT) compilation.
+- Full standalone Ahead Of Time (AOT) compilation.
 - Full Just In Time (JIT) compilation via `-jit`.
 - Control over deeper C compiler code optimizations.
 - Deeper code generation control.
@@ -317,6 +317,7 @@ Any kind of support is appreciated and will be taken into account.
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
