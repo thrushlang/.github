@@ -58,11 +58,12 @@ fn main() s32 @public {
 
 ## Current Features
 
-- Code Generation Control.
-- Robust Static Type Checking.
-- C Simplicity.
-- C Interoperability.
-- Native Assembler Interoperability.
+- Full Ahead Of Time (AOT) compilation.
+- Full Just In Time (JIT) compilation via `-jit`.
+- Control over deeper C compiler code optimizations.
+- Deeper code generation control.
+- Robust static type checking.
+- Standalone x86_64 assembler interoperability.
 
 ## Future Features
 
@@ -312,6 +313,7 @@ Any kind of support is appreciated and will be taken into account.
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
