@@ -73,7 +73,7 @@ fn main() s32 @public {
 
 ## State
 
-- The Thrush compiler ``thrushc``: The Thrush compiler is in a near-BETA phase (final bug hunts), and the first edition of the language will soon be available. Thorium won’t be ready, so a temporary installer will be created until Thorium’s development is complete or advanced enough for a beta. The documentation is on its way.
+- The Thrush compiler ``thrushc``: The Thrush compiler is in a near-BETA phase (final bug hunts), and the first edition of the language will soon be available. Torio (the package manager) won’t be ready, so a temporary installer will be created until Torio development is complete or advanced enough for a beta. The documentation is on its way.
 
 ## Documentation
 
@@ -313,6 +313,7 @@ Any kind of support is appreciated and will be taken into account.
 ## Social Networks
 
 [![Thrush Programming Language](https://invite.casperiv.dev?inviteCode=MhVpCSxnhV)](https://discord.gg/MhVpCSxnhV)
+
 
 
 
