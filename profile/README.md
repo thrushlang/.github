@@ -15,27 +15,6 @@
 
 Thrush is a very promising tool for bare-metal and embedded system development thanks to its innovative low-level instruction concepts, particularly its integrated Low-Level Instructions (LLIs) for powerful IR manipulation using GCC and LLVM intrinsics. Thrush offers more granular control over system languages by manipulating low-level instructions for extreme manual optimizations that compiler backends cannot decipher.
 
-### Low Level Control
-
-- Thrush enables integration of low-level instructions along their high-level counterparts, allowing developers to fluidly switch between abstraction levels within the same codebase.
-
-```rust
-fn main() u32 {
-
-    local a: u8 = 7;
-    local b: u8 = 15;
-    
-    // Low-level instruction for direct memory access.
-    lli write load u8, a, b;
-
-    // c = 7
-    local c: u8 = b;
-
-    return 0;
-
-}
-```
-
 - Thrush enables embedding of linear assembler within the compilation process, offering direct control over architecture-specific code generation.
 
 ```rust
@@ -319,6 +298,7 @@ Already know **[Rust](https://www.rust-lang.org/)** but not **[LLVM](https://llv
 # Always Remember
 
 ~ *"It takes a long time to make a tool that is simple and beautiful."* ~ Bjarne Stroustrup (C++ Programming Language creator)
+
 
 
 
