@@ -88,7 +88,7 @@ The **Thrush Programming Language** is part of a research project or is included
   <img src= "https://github.com/thrushlang/.github/blob/main/assets/thrushlang-research-universities.png" style= "width: 1hv; height: 1hv;"> </img>
 </p>
 
-*THIS DOES NOT MEAN I AM OFFICIALLY AFFILIATED WITH THESE INSTITUTIONS.*
+*THIS DOES NOT MEAN THAT THRUSH PROGRAMMING LANGUAGE IS OFFICIALLY AFFILIATED WITH THESE INSTITUTIONS.*
 
 ## Examples
 
@@ -331,6 +331,7 @@ Any kind of support is appreciated and will be taken into account.
 # Always Remember
 
 ~ *"It takes a long time to make a tool that is simple and beautiful."* ~ Bjarne Stroustrup (C++ Programming Language creator)
+
 
 
 
