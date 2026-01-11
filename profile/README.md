@@ -291,6 +291,17 @@ clang -O3 loop.c -o loop && ./loop 1
 
 General examples of programming language usage can be found: [Examples](https://github.com/thrushlang/thrushc/blob/master/examples)
 
+## Case Of Study
+
+The **Thrush Programming Language** is part of a research project or is included in a university census:
+
+*THIS DOES NOT MEAN I AM OFFICIALLY AFFILIATED WITH THESE INSTITUTIONS.*
+
+<p align="center">
+  <img src= "https://github.com/thrushlang/.github/blob/main/assets/universities/UPORTO.png" style= "width: 1hv; height: 1hv;"> </img>
+  <img src= "https://github.com/thrushlang/.github/blob/main/assets/universities/INESCTEC.png" style= "width: 1hv; height: 1hv;"> </img>
+</p>
+
 ## Background
 
 In fact, the programming language was originally intended for learning purposes in the compiler fields, for the "team" behind the project. However, this doesn't mean it will be __taken as seriously as possible__.
