@@ -59,16 +59,6 @@ fn main() s32 @public {
 The documentation is on its way.
 New, dedicated documentation is on its way for the web; however, you can view the outdated version at: https://github.com/thrushlang/syntax
 
-## Case Of Study
-
-The **Thrush Programming Language** is part of a research project or is included in a university census:
-
-<p align="left">
-  <img src= "https://github.com/thrushlang/.github/blob/main/assets/thrushlang-research-universities.png" style= "width: 1hv; height: 1hv;"> </img>
-</p>
-
-*THIS DOES NOT MEAN THAT THRUSH PROGRAMMING LANGUAGE IS OFFICIALLY AFFILIATED WITH THESE INSTITUTIONS.*
-
 ## Examples
 
 ### Compiler
@@ -280,6 +270,16 @@ clang -O3 loop.c -o loop && ./loop 1
 
 General examples of programming language usage can be found: [Examples](https://github.com/thrushlang/thrushc/blob/master/examples)
 
+## Case Of Study
+
+The **Thrush Programming Language** is involved with a research project or is part of a census at the University of Porto and the Institute for Systems and Computer Engineering, Technology and Science, related to a former PhD student.
+
+<p align="left">
+  <img src= "https://github.com/thrushlang/.github/blob/main/assets/thrushlang-research-universities.png" style= "width: 1hv; height: 1hv;"> </img>
+</p>
+
+*THIS DOES NOT MEAN THAT THRUSH PROGRAMMING LANGUAGE IS OFFICIALLY AFFILIATED WITH THESE INSTITUTIONS.*
+
 ## Background
 
 In fact, the programming language was originally intended for learning purposes in the compiler fields, for the "team" behind the project. However, this doesn't mean it will be __taken as seriously as possible__.
@@ -298,6 +298,7 @@ Already know **[Rust](https://www.rust-lang.org/)** but not **[LLVM](https://llv
 # Always Remember
 
 ~ *"It takes a long time to make a tool that is simple and beautiful."* ~ Bjarne Stroustrup (C++ Programming Language creator)
+
 
 
 
