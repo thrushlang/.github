@@ -272,7 +272,7 @@ General examples of programming language usage can be found: [Examples](https://
 
 ## Case Of Study
 
-The **Thrush Programming Language** is involved with a research project or is part of a census at the University of Porto and the Institute for Systems and Computer Engineering, Technology and Science, related to a former PhD student.
+The **Thrush Programming Language** is involved with a research project or is part of a census at the University of Porto (**U.Porto**) and the Institute for Systems and Computer Engineering, Technology and Science (**INESC TEC**), related to a former PhD student.
 
 <p align="left">
   <img src= "https://github.com/thrushlang/.github/blob/main/assets/thrushlang-research-universities.png" style= "width: 1hv; height: 1hv;"> </img>
@@ -298,6 +298,7 @@ Already know **[Rust](https://www.rust-lang.org/)** but not **[LLVM](https://llv
 # Always Remember
 
 ~ *"It takes a long time to make a tool that is simple and beautiful."* ~ Bjarne Stroustrup (C++ Programming Language creator)
+
 
 
 
