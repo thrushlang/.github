@@ -289,7 +289,7 @@ The responsible team (practically a *solo developer*) considers it a side, not m
 ## Support
 
 We're looking for contributors for our project! If you're a Spanish speaker and would like to contribute, contact us through our official social media channels.
-Already know **[Rust](https://www.rust-lang.org/)** but not **[LLVM](https://llvm.org/)**? Don't worry! We're happy to teach you.
+Already know **[Rust](https://www.rust-lang.org/)** but not **[LLVM](https://llvm.org/)** or **[GCC](https://gcc.gnu.org/)**? Don't worry! We're happy to teach you.
 
 ## Social Networks
 
@@ -298,6 +298,7 @@ Already know **[Rust](https://www.rust-lang.org/)** but not **[LLVM](https://llv
 # Always Remember
 
 ~ *"It takes a long time to make a tool that is simple and beautiful."* ~ Bjarne Stroustrup (C++ Programming Language creator)
+
 
 
 
