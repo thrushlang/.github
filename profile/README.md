@@ -20,7 +20,7 @@ Thrush is a very promising tool for bare-metal and embedded system development t
 ```rust
 
 asmfn invoke_x86_64_exit_syscall() void
-@asmsyntax("AT&T") @convention("C")
+@asmSyntax("AT&T") @convention("C")
 {
     "mov $$60, %rax",
     "mov $$1, %rdi",
@@ -99,7 +99,7 @@ torio run
 //
 
 // External declaration for the C printf function
-fn print(fmt: const ptr[array[char]]) s32 @public @ignore @extern("printf") @convention("C");
+fn print(fmt: const array[char]) s32 @public @vaArgs @extern("printf") @convention("C");
 
 fn main() s32 @public {
 
@@ -125,7 +125,7 @@ fn main() s32 @public {
 //
 
 // External declaration for the C printf function
-fn print(fmt: const ptr[array[char]]) s32 @public @ignore @extern("printf") @convention("C");
+fn print(fmt: const array[char]) s32 @public @vaArgs @extern("printf") @convention("C");
 
 // Computes the nth Fibonacci number recursively
 //
@@ -184,15 +184,17 @@ fn main(argc: u32, argv: ptr[array[char]]) s32 @public {
 //
 // ******************************************************************************************
 
-fn atoi(str: const ptr[array[char]]) s32 @public @ignore @extern("atoi") @convention("C");
+fn atoi(str: const array[char]) s32 @public @vaArgs @extern("atoi") @convention("C");
 fn srand(seed: u32) void @public @extern("srand") @convention("C");
 fn time(timer: ptr) u32 @public @extern("time") @convention("C"); 
 fn rand() s32 @public @extern("rand") @convention("C");
-fn print(fmt: const ptr[array[char]]) s32 @public @ignore @extern("printf") @convention("C");
+fn print(fmt: const array[char]) s32 @public @vaArgs @extern("printf") @convention("C");
 
 fn main(argc: s32, argv: ptr[array[char]]) s32 @public {
 
-    local mut u: s32 = atoi(deref (argv[1] as const ptr[array[char]])); 
+    local mut u: s32 = atoi(
+        (deref (argv[1] as ptr[ptr[char]])) as const array[char]
+    ); 
 
     srand(time(nullptr)); 
   
@@ -268,8 +270,6 @@ clang -O3 loop.c -o loop && ./loop 1
 > [!NOTE]  
 >  Obviously, if you have a little knowledge of CS, you know that this isn't the ideal way to test which programming language is faster, but anyway, it's just to point out that Thrush is trying to be a C equivalent in the speed field.
 
-General examples of programming language usage can be found: [Examples](https://github.com/thrushlang/thrushc/blob/master/examples)
-
 ## Case Of Study
 
 The **Thrush Programming Language** is involved with a research project or is part of a census at the University of Porto (**U.Porto**) and the Institute for Systems and Computer Engineering, Technology and Science (**INESC TEC**), related to a former PhD student.
@@ -298,6 +298,7 @@ Already know **[Rust](https://www.rust-lang.org/)** but not **[LLVM](https://llv
 # Always Remember
 
 ~ *"It takes a long time to make a tool that is simple and beautiful."* ~ Bjarne Stroustrup (C++ Programming Language creator)
+
 
 
 
