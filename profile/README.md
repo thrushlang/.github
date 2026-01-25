@@ -99,7 +99,7 @@ torio run
 //
 
 // External declaration for the C printf function
-fn print(fmt: const array[char]) s32 @public @vaArgs @extern("printf") @convention("C");
+fn print(fmt: const array[char]) s32 @public @arbitraryArgs @extern("printf") @convention("C");
 
 fn main() s32 @public {
 
@@ -125,7 +125,7 @@ fn main() s32 @public {
 //
 
 // External declaration for the C printf function
-fn print(fmt: const array[char]) s32 @public @vaArgs @extern("printf") @convention("C");
+fn print(fmt: const array[char]) s32 @public @arbitraryArgs @extern("printf") @convention("C");
 
 // Computes the nth Fibonacci number recursively
 //
@@ -188,7 +188,7 @@ fn atoi(str: const array[char]) s32 @public @vaArgs @extern("atoi") @convention(
 fn srand(seed: u32) void @public @extern("srand") @convention("C");
 fn time(timer: ptr) u32 @public @extern("time") @convention("C"); 
 fn rand() s32 @public @extern("rand") @convention("C");
-fn print(fmt: const array[char]) s32 @public @vaArgs @extern("printf") @convention("C");
+fn print(fmt: const array[char]) s32 @public @arbitraryArgs @extern("printf") @convention("C");
 
 fn main(argc: s32, argv: ptr[array[char]]) s32 @public {
 
@@ -298,6 +298,7 @@ Already know **[Rust](https://www.rust-lang.org/)** but not **[LLVM](https://llv
 # Always Remember
 
 ~ *"It takes a long time to make a tool that is simple and beautiful."* ~ Bjarne Stroustrup (C++ Programming Language creator)
+
 
 
 
