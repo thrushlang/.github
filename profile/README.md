@@ -278,7 +278,7 @@ The **Thrush Programming Language** is involved with a research project or is pa
   <img src= "https://github.com/thrushlang/.github/blob/main/assets/thrushlang-research-universities.png" style= "width: 1hv; height: 1hv;"> </img>
 </p>
 
-*THIS DOES NOT MEAN THAT THRUSH PROGRAMMING LANGUAGE IS OFFICIALLY AFFILIATED WITH THESE INSTITUTIONS.*
+DISCLAIMER: *THIS DOES NOT MEAN THAT THRUSH PROGRAMMING LANGUAGE IS OFFICIALLY AFFILIATED WITH THESE INSTITUTIONS.*
 
 ## Background
 
@@ -298,6 +298,7 @@ Already know **[Rust](https://www.rust-lang.org/)** but not **[LLVM](https://llv
 # Always Remember
 
 ~ *"It takes a long time to make a tool that is simple and beautiful."* ~ Bjarne Stroustrup (C++ Programming Language creator)
+
 
 
 
